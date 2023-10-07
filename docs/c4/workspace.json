@@ -1,0 +1,307 @@
+{
+  "id" : 1,
+  "name" : "Self-Destructing Email Service",
+  "description" : "The sofware architecture of the self-destructing email servic",
+  "lastModifiedDate" : "2023-10-07T19:03:50Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICBuYW1lICJTZWxmLURlc3RydWN0aW5nIEVtYWlsIFNlcnZpY2UiCiAgZGVzY3JpcHRpb24gIlRoZSBzb2Z3YXJlIGFyY2hpdGVjdHVyZSBvZiB0aGUgc2VsZi1kZXN0cnVjdGluZyBlbWFpbCBzZXJ2aWMiCgogIG1vZGVsIHsKICAgIHUgPSBwZXJzb24gIkN1c3RvbWVyIgogICAgcyA9IHNvZnR3YXJlU3lzdGVtICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgd2ViYXBwID0gY29udGFpbmVyICJXZWIgQXBwbGljYXRpb24iICIiICJTcHJpbmc/IgogICAgICBkYXRhYmFzZSA9IGNvbnRhaW5lciAiRGF0YWJhc2UiICIiICJSREJTIgogICAgfQoKICAgIC8vIERlcGxveW1lbnRzCiAgICBsaXZlID0gZGVwbG95bWVudEVudmlyb25tZW50ICJMaXZlIiB7CiAgICAgIC8vIEFXUwogICAgICBkZXBsb3ltZW50Tm9kZSAiQW1hem9uIFdlYiBTZXJ2aWNlcyIgewogICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBDbG91ZCIKCiAgICAgICAgLy8gV2hpY2ggcmVnaW9uCiAgICAgICAgZGVwbG95bWVudE5vZGUgImV1LWNlbnRyYWwtMSIgewogICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFJlZ2lvbiIKCiAgICAgICAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgICAvLyBPcmdhbml6YXRpb25hbCBVbml0OiBEZXZPcHMKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIGRlcGxveW1lbnROb2RlICJPVS1EZXZPcHMiIHsKICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEFXUyBPcmdhbml6YXRpb25zIE9yZ2FuaXphdGlvbmFsIFVuaXQiCgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiYWNjLWRldm9wcy1wcm9kIiB7CiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEFXUyBPcmdhbml6YXRpb25zIEFjY291bnQiCgogICAgICAgICAgICAgIGluZnJhc3RydWN0dXJlTm9kZSAiR2l0bGFiIFNlcnZlciIgewogICAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEVDMiIKICAgICAgICAgICAgICB9CgogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgICAKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIC8vIE9yZ2FuaXphdGlvbmFsIFVuaXQ6IFRlY2gKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIGRlcGxveW1lbnROb2RlICJPVS1UZWNoIiB7CiAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBV1MgT3JnYW5pemF0aW9ucyBPcmdhbml6YXRpb25hbCBVbml0IgoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgImFjYy10ZWNoLXByb2QiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgaW5mcmFzdHJ1Y3R1cmVOb2RlICJFS1MgQ2x1c3RlciIgewogICAgICAgICAgICAgICAgdGFncyA9ICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRUtTIENsb3VkIgogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgfQoKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIC8vIE9yZ2FuaXphdGlvbmFsIFVuaXQ6IFNlY3VyaXR5CiAgICAgICAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiT1UtU2VjdXJpdHkiIHsKICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEFXUyBPcmdhbml6YXRpb25zIE9yZ2FuaXphdGlvbmFsIFVuaXQiCgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiYWNjLXNlY3VyaXR5LWxvZ2dpbmciIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgczNfbG9nZ2luZyA9IGluZnJhc3RydWN0dXJlTm9kZSAiUzMgQnVja2V0IiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gU2ltcGxlIFN0b3JhZ2UgU2VydmljZSIKICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgIGluZnJhc3RydWN0dXJlTm9kZSAiQ2xvdWRXYXRjaCBMb2dzIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQ2xvdWRXYXRjaCBMb2dzIgogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgImFjYy1zZWN1cml0eS1tb25pdG9yaW5nIiB7CiAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEFXUyBPcmdhbml6YXRpb25zIEFjY291bnQiCgogICAgICAgICAgICAgIGluZnJhc3RydWN0dXJlTm9kZSAiQ2xvdWRXYXRjaCIgewogICAgICAgICAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIENsb3VkV2F0Y2ggQWxhcm0iCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfSAgCiAgICAgIH0KICAgIH0KICB9CgogIHZpZXdzIHsKICAgIC8vIFN5c3RlbSBjb250ZXh0CiAgICBzeXN0ZW1Db250ZXh0IHMgIlN5c3RlbUNvbnRleHQiIHsKICAgICAgaW5jbHVkZSAqCiAgICAgIGRlc2NyaXB0aW9uICJUaGUgc3lzdGVtIGNvbnRleHQgZGlhZ3JhbSBmb3IgdGhlIHNlbGYtZGVzdHJ1Y3RpbmcgbWFpbCBzZXJ2aWNlIgogICAgfQoKICAgIC8vIENvbnRhaW5lciBjb250ZXh0CiAgICBjb250YWluZXIgcyAiQ29udGFpbmVycyIgewogICAgICBpbmNsdWRlICoKICAgICAgZGVzY3JpcHRpb24gIlRoZSBjb250YWluZXIgZGlhZ3JhbSBmb3IgdGhlIHNlbGYtZGVzdHJ1Y3RpbmcgbWFpbCBzZXJ2aWNlIgogICAgfQoKICAgIC8vIERlcGxveW1lbnQgbGl2ZQogICAgZGVwbG95bWVudCBzIGxpdmUgIkxpdmVEZXBsb3ltZW50IiAgewogICAgICBpbmNsdWRlICoKICAgICAgLy8gYXV0b0xheW91dCBscgogICAgICBkZXNjcmlwdGlvbiAiQW4gZXhhbXBsZSBsaXZlIGRlcGxveW1lbnQgZm9yIHRoZSBzZWxmLWRlc3RydWN0aW5nIGVtYWlsIHNlcnZpY2UiCiAgICB9CgogICAgLy8gVGhlbWVzCiAgICAvLyBZb3UgY2FuIGNvbWJpbmUgbXVsdGlwbGUgdGhlbWVzIQogICAgdGhlbWUgaHR0cHM6Ly9zdGF0aWMuc3RydWN0dXJpenIuY29tL3RoZW1lcy9hbWF6b24td2ViLXNlcnZpY2VzLTIwMjMuMDEuMzEvdGhlbWUuanNvbgogICAgdGhlbWUgaHR0cHM6Ly9zdGF0aWMuc3RydWN0dXJpenIuY29tL3RoZW1lcy9rdWJlcm5ldGVzLXYwLjMvdGhlbWUuanNvbgoKICAgIC8vIEV4dHJhIFN0eWxpbmcKICAgIHN0eWxlcyB7CiAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICBmb250U2l6ZSAyMgogICAgICAgIHNoYXBlIFBlcnNvbgogICAgICB9CiAgICB9CgogIH0KfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "u"
+      },
+      "name" : "Customer",
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "2",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "s"
+      },
+      "name" : "Software System",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "name" : "Database",
+        "technology" : "RDBS",
+        "documentation" : { }
+      }, {
+        "id" : "3",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "webapp"
+        },
+        "name" : "Web Application",
+        "technology" : "Spring?",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "5",
+      "tags" : "Element,Deployment Node,Amazon Web Services - Cloud",
+      "properties" : {
+        "structurizr.dsl.identifier" : "1d4b2350-0dde-4cba-abc6-82390b16eeed"
+      },
+      "name" : "Amazon Web Services",
+      "environment" : "Live",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "6",
+        "tags" : "Element,Deployment Node,Amazon Web Services - Region",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a31008d9-a68d-47cb-a4ff-8a462d7969d0"
+        },
+        "name" : "eu-central-1",
+        "environment" : "Live",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "7",
+          "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Organizational Unit",
+          "properties" : {
+            "structurizr.dsl.identifier" : "0011f965-68de-4709-ab09-cd851938a55e"
+          },
+          "name" : "OU-DevOps",
+          "environment" : "Live",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "8",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
+            "properties" : {
+              "structurizr.dsl.identifier" : "fab08117-e964-4ec2-ac8f-be67405604bd"
+            },
+            "name" : "acc-devops-prod",
+            "environment" : "Live",
+            "instances" : "1",
+            "infrastructureNodes" : [ {
+              "id" : "9",
+              "tags" : "Element,Infrastructure Node,Amazon Web Services - EC2",
+              "properties" : {
+                "structurizr.dsl.identifier" : "11c2316a-82a4-4877-898e-5ab1e5413063"
+              },
+              "name" : "Gitlab Server",
+              "environment" : "Live"
+            } ]
+          } ]
+        }, {
+          "id" : "13",
+          "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Organizational Unit",
+          "properties" : {
+            "structurizr.dsl.identifier" : "09f4f584-648a-4312-8b0b-1f6e2cd9c735"
+          },
+          "name" : "OU-Security",
+          "environment" : "Live",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "14",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ca6bd85e-bcff-4f52-b710-20f2fd751085"
+            },
+            "name" : "acc-security-logging",
+            "environment" : "Live",
+            "instances" : "1",
+            "infrastructureNodes" : [ {
+              "id" : "16",
+              "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch Logs",
+              "properties" : {
+                "structurizr.dsl.identifier" : "c9aece33-5b73-4b10-882d-780e41530237"
+              },
+              "name" : "CloudWatch Logs",
+              "environment" : "Live"
+            }, {
+              "id" : "15",
+              "tags" : "Element,Infrastructure Node,Amazon Web Services - Simple Storage Service",
+              "properties" : {
+                "structurizr.dsl.identifier" : "s3_logging"
+              },
+              "name" : "S3 Bucket",
+              "environment" : "Live"
+            } ]
+          }, {
+            "id" : "17",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
+            "properties" : {
+              "structurizr.dsl.identifier" : "5d6ac68b-ba87-43dc-acaa-b85b589daba2"
+            },
+            "name" : "acc-security-monitoring",
+            "environment" : "Live",
+            "instances" : "1",
+            "infrastructureNodes" : [ {
+              "id" : "18",
+              "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch Alarm",
+              "properties" : {
+                "structurizr.dsl.identifier" : "440e76e9-3359-47ae-bcaa-e3d70288fe97"
+              },
+              "name" : "CloudWatch",
+              "environment" : "Live"
+            } ]
+          } ]
+        }, {
+          "id" : "10",
+          "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Organizational Unit",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6a9fd420-0801-4772-a08f-fd8b3cda32be"
+          },
+          "name" : "OU-Tech",
+          "environment" : "Live",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "11",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
+            "properties" : {
+              "structurizr.dsl.identifier" : "22e1f840-c253-4b49-9f5b-a0f69833a19d"
+            },
+            "name" : "acc-tech-prod",
+            "environment" : "Live",
+            "instances" : "1",
+            "infrastructureNodes" : [ {
+              "id" : "12",
+              "tags" : "Element,Infrastructure Node,=,Amazon Web Services - EKS Cloud",
+              "properties" : {
+                "structurizr.dsl.identifier" : "ee15cc66-e766-4d3a-94bd-7fcab9d1e46c"
+              },
+              "name" : "EKS Cluster",
+              "environment" : "Live"
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContext",
+      "order" : 1,
+      "description" : "The system context diagram for the self-destructing mail service",
+      "softwareSystemId" : "2",
+      "paperSize" : "A5_Landscape",
+      "dimensions" : {
+        "width" : 2480,
+        "height" : 1748
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "2",
+        "x" : 1015,
+        "y" : 724
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "Containers",
+      "order" : 2,
+      "description" : "The container diagram for the self-destructing mail service",
+      "softwareSystemId" : "2",
+      "paperSize" : "A5_Landscape",
+      "dimensions" : {
+        "width" : 2480,
+        "height" : 1748
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "deploymentViews" : [ {
+      "key" : "LiveDeployment",
+      "order" : 3,
+      "description" : "An example live deployment for the self-destructing email service",
+      "softwareSystemId" : "2",
+      "paperSize" : "A2_Landscape",
+      "dimensions" : {
+        "width" : 5187,
+        "height" : 1583
+      },
+      "environment" : "Live",
+      "elements" : [ {
+        "id" : "11",
+        "x" : 700,
+        "y" : 700
+      }, {
+        "id" : "12",
+        "x" : 4095,
+        "y" : 641
+      }, {
+        "id" : "13",
+        "x" : 700,
+        "y" : 700
+      }, {
+        "id" : "14",
+        "x" : 700,
+        "y" : 700
+      }, {
+        "id" : "15",
+        "x" : 3125,
+        "y" : 641
+      }, {
+        "id" : "16",
+        "x" : 2375,
+        "y" : 641
+      }, {
+        "id" : "17",
+        "x" : 700,
+        "y" : 700
+      }, {
+        "id" : "18",
+        "x" : 1612,
+        "y" : 641
+      }, {
+        "id" : "5",
+        "x" : 700,
+        "y" : 700
+      }, {
+        "id" : "6",
+        "x" : 700,
+        "y" : 700
+      }, {
+        "id" : "7",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "8",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "9",
+        "x" : 641,
+        "y" : 641
+      }, {
+        "id" : "10",
+        "x" : 700,
+        "y" : 700
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Person",
+          "color" : "#ffffff",
+          "fontSize" : 22,
+          "shape" : "Person"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/amazon-web-services-2023.01.31/theme.json", "https://static.structurizr.com/themes/kubernetes-v0.3/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "LiveDeployment"
+    }
+  }
+}
