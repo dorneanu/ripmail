@@ -1,6 +1,6 @@
 workspace {
   // See  https://github.com/structurizr/dsl/blob/master/docs/language-reference.md#identifier-scope
-  !identifiers hierarchical
+  // !identifiers hierarchical
 
   name "Self-Destructing Email Service"
   description "The sofware architecture of the self-destructing email servic"
@@ -103,39 +103,96 @@ workspace {
           // -------------------------------------------------------------------
           // Organizational Unit: Tech
           // -------------------------------------------------------------------
-          deploymentNode "OU-Tech" {
+          ou_tech = deploymentNode "OU-Tech" {
             tags "Amazon Web Services - AWS Organizations Organizational Unit"
 
             deploymentNode "acc-tech-prod" {
               tags "Amazon Web Services - AWS Organizations Account"
 
-              // EKS cluster
-              deploymentNode "EKS Cluster" {
-                tags = "Amazon Web Services - EKS Cloud"
+              // EKS control plane
+              eks_vpc = deploymentNode "EKS VPC" {
+                tags = "Amazon Web Services - VPC Virtual private cloud VPC"
 
-                infrastructureNode "EKS VPC" {
-                  tags = "Amazon Web Services - VPC Virtual private cloud VPC"
+                eks_control_plane = infrastructureNode "EKS Control Plane" {
+                  tags = "Amazon Web Services - EKS Cloud"
                 }
               }
 
+              // EKS cluster
+              workload_vpc = deploymentNode "Workload VPC" {
+                tags = "Amazon Web Services - VPC Virtual private cloud VPC"
+
+                // AZ 1
+                deploymentNode "Availability Zone 1" {
+                  tags = "Amazon Web Services - Region"
+
+                  deploymentNode "Subnet 1" {
+                    tags = "Amazon Web Services - VPC VPN Gateway"
+
+                    eks_node_group1 = deploymentNode "EKS Managed Node Group" {
+                      tags = "Amazon Web Services - EKS Cloud"
+
+                      eks_node_group1_pod1 = deploymentNode "Pod 1" {
+                        tags = "Kubernetes - pod"
+                        pod1_authAPI = containerInstance authAPI
+                      }
+
+                      eks_node_group1_pod2 = deploymentNode "Pod 2" {
+                        tags = "Kubernetes - pod"
+                        pod2_mailCompositionAPI = containerInstance mailcompositionAPI
+                        pod2_notificationAPI = containerInstance notificationAPI
+
+                      }
+
+                    }
+                  }
+
+                }
+
+                // AZ 2
+                deploymentNode "Availability Zone 2" {
+                  tags = "Amazon Web Services - Region"
+
+                  deploymentNode "Subnet 1" {
+                    tags = "Amazon Web Services - VPC VPN Gateway"
+
+                    eks_node_group2 = infrastructureNode "EKS Managed Node Group" {
+                      tags = "Amazon Web Services - EKS Cloud"
+                    }
+
+                  }
+                }
+              }
+
+              
+
               // DynamoDB instances
-              // TODO: Add VPC
               dbs = group "Databases" {
-                deploymentNode "DynamoDB (Auth)" {
-                  tags "Amazon Web Services - DynamoDB"
+                deploymentNode "DB VPC" {
+                  tags = "Amazon Web Services - VPC Virtual private cloud VPC"
 
-                  liveUserDB = containerInstance backend.authDB
+                  deploymentNode "DynamoDB (Auth)" {
+                    tags "Amazon Web Services - DynamoDB"
+
+                    liveUserDB = containerInstance authDB
+                  }
+
+                  deploymentNode "DynamoDB (Mails)" {
+                    tags "Amazon Web Services - DynamoDB"
+
+                    liveMailDB = containerInstance mailDB
+                  }
                 }
-
-                deploymentNode "DynamoDB (Mails)" {
-                  tags "Amazon Web Services - DynamoDB"
-
-                  livMailDB = containerInstance backend.mailDB
-                }
-
               }
             }
           }
+
+          // Relationships
+          # pod1_authAPI -> liveUserDB 
+          # pod1_authAPI -> liveMailDB
+
+          eks_control_plane -> eks_node_group1 "Controls"
+          eks_control_plane -> eks_node_group2 "Controls"
 
           // -------------------------------------------------------------------
           // Organizational Unit: Security
@@ -183,17 +240,17 @@ workspace {
     }
     // --- Authentication Service 
     container backend "Containers_AuthenticationService" {
-      include ->backend.authService->
+      include ->authService->
       autolayout
     }
     // --- Notification Service 
     container backend "Containers_NotificationService" {
-      include ->backend.notificationService->
+      include ->notificationService->
       autolayout
     }
-    // --- Email Composition Service 
+    # // --- Email Composition Service 
     container backend "Containers_MailCompositionService" {
-      include ->backend.mailCompositionService->
+      include ->mailCompositionService->
       autolayout
     }
 
@@ -203,12 +260,19 @@ workspace {
     #   description "The container diagram for the self-destructing mail service"
     # }
 
+    // Workload live
+    deployment backend live "WorkloadDeployment" {
+      include ->ou_tech->
+      description "Deployment of the workload"
+    }
+
     // Deployment live
     deployment backend live "LiveDeployment"  {
       include *
       // autoLayout lr
       description "An example live deployment for the self-destructing email service"
     }
+
 
     // Themes
     // You can combine multiple themes!
