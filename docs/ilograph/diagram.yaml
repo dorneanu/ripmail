@@ -1,0 +1,380 @@
+resources:
+
+  - id: "1"
+    name: "Customer"
+    subtitle: "[Person]"
+    backgroundColor: "#dddddd"
+    color: "#ffffff"
+
+  - id: "2"
+    name: "Logging System"
+    subtitle: "[Software System]"
+    description: "Logs several events related to mail generation"
+    backgroundColor: "#dddddd"
+    color: "#000000"
+
+  - id: "23"
+    name: "Software System"
+    subtitle: "[Software System]"
+    backgroundColor: "#dddddd"
+    color: "#000000"
+
+    children:
+      - id: "24"
+        name: "Web Application"
+        subtitle: "[Container: Spring?]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+      - id: "25"
+        name: "Database"
+        subtitle: "[Container: RDBS]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+  - id: "3"
+    name: "Storage System"
+    subtitle: "[Software System]"
+    description: "Stores encrypted mail content"
+    backgroundColor: "#dddddd"
+    color: "#000000"
+
+  - id: "4"
+    name: "Backend System"
+    subtitle: "[Software System]"
+    backgroundColor: "#dddddd"
+    color: "#000000"
+
+    children:
+      - id: "10"
+        name: "Email Composition API"
+        subtitle: "[Container]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+      - id: "11"
+        name: "Email Composition Database"
+        subtitle: "[Container]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+      - id: "5"
+        name: "Web Application"
+        subtitle: "[Container]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+      - id: "6"
+        name: "Auth Service API"
+        subtitle: "[Container]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+      - id: "7"
+        name: "Auth Service Database"
+        subtitle: "[Container]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+      - id: "9"
+        name: "Notification API"
+        subtitle: "[Container]"
+        backgroundColor: "#dddddd"
+        color: "#000000"
+
+  - id: "26"
+    name: "Amazon Web Services"
+    subtitle: "[Deployment Node]"
+    backgroundColor: "#ffffff"
+    color: "#000000"
+
+    children:
+      - id: "27"
+        name: "eu-central-1"
+        subtitle: "[Deployment Node]"
+        backgroundColor: "#ffffff"
+        color: "#000000"
+
+        children:
+          - id: "28"
+            name: "OU-DevOps"
+            subtitle: "[Deployment Node]"
+            backgroundColor: "#ffffff"
+            color: "#b0084d"
+
+            children:
+              - id: "29"
+                name: "acc-devops-prod"
+                subtitle: "[Deployment Node]"
+                backgroundColor: "#ffffff"
+                color: "#b0084d"
+
+                children:
+                  - id: "30"
+                    name: "Gitlab Server"
+                    subtitle: "[Infrastructure Node]"
+                    backgroundColor: "#dddddd"
+                    color: "#e5770d"
+
+          - id: "31"
+            name: "OU-Tech"
+            subtitle: "[Deployment Node]"
+            backgroundColor: "#ffffff"
+            color: "#b0084d"
+
+            children:
+              - id: "32"
+                name: "acc-tech-prod"
+                subtitle: "[Deployment Node]"
+                backgroundColor: "#ffffff"
+                color: "#b0084d"
+
+                children:
+                  - id: "33"
+                    name: "EKS VPC"
+                    subtitle: "[Deployment Node]"
+                    backgroundColor: "#ffffff"
+                    color: "#4d27aa"
+
+                    children:
+                      - id: "34"
+                        name: "EKS Control Plane"
+                        subtitle: "[Infrastructure Node]"
+                        backgroundColor: "#dddddd"
+                        color: "#e5770d"
+
+                  - id: "35"
+                    name: "Workload VPC"
+                    subtitle: "[Deployment Node]"
+                    backgroundColor: "#ffffff"
+                    color: "#4d27aa"
+
+                    children:
+                      - id: "36"
+                        name: "Availability Zone 1"
+                        subtitle: "[Deployment Node]"
+                        backgroundColor: "#ffffff"
+                        color: "#000000"
+
+                        children:
+                          - id: "37"
+                            name: "Subnet 1"
+                            subtitle: "[Deployment Node]"
+                            backgroundColor: "#ffffff"
+                            color: "#4d27aa"
+
+                            children:
+                              - id: "38"
+                                name: "EKS Managed Node Group"
+                                subtitle: "[Deployment Node]"
+                                backgroundColor: "#ffffff"
+                                color: "#e5770d"
+
+                                children:
+                                  - id: "39"
+                                    name: "Pod 1"
+                                    subtitle: "[Deployment Node]"
+                                    backgroundColor: "#ffffff"
+                                    color: "#3d6fdd"
+
+                                    children:
+                                      - id: "40"
+                                        name: "Auth Service API"
+                                        subtitle: "[Container]"
+                                        backgroundColor: "#dddddd"
+                                        color: "#000000"
+
+                                  - id: "41"
+                                    name: "Pod 2"
+                                    subtitle: "[Deployment Node]"
+                                    backgroundColor: "#ffffff"
+                                    color: "#3d6fdd"
+
+                                    children:
+                                      - id: "42"
+                                        name: "Email Composition API"
+                                        subtitle: "[Container]"
+                                        backgroundColor: "#dddddd"
+                                        color: "#000000"
+
+                                      - id: "43"
+                                        name: "Notification API"
+                                        subtitle: "[Container]"
+                                        backgroundColor: "#dddddd"
+                                        color: "#000000"
+
+                      - id: "46"
+                        name: "Availability Zone 2"
+                        subtitle: "[Deployment Node]"
+                        backgroundColor: "#ffffff"
+                        color: "#000000"
+
+                        children:
+                          - id: "47"
+                            name: "Subnet 1"
+                            subtitle: "[Deployment Node]"
+                            backgroundColor: "#ffffff"
+                            color: "#4d27aa"
+
+                            children:
+                              - id: "48"
+                                name: "EKS Managed Node Group"
+                                subtitle: "[Infrastructure Node]"
+                                backgroundColor: "#dddddd"
+                                color: "#e5770d"
+
+                  - id: "49"
+                    name: "DB VPC"
+                    subtitle: "[Deployment Node]"
+                    backgroundColor: "#ffffff"
+                    color: "#4d27aa"
+
+                    children:
+                      - id: "50"
+                        name: "DynamoDB (Auth)"
+                        subtitle: "[Deployment Node]"
+                        backgroundColor: "#ffffff"
+                        color: "#4053d6"
+
+                        children:
+                          - id: "51"
+                            name: "Auth Service Database"
+                            subtitle: "[Container]"
+                            backgroundColor: "#dddddd"
+                            color: "#000000"
+
+                      - id: "53"
+                        name: "DynamoDB (Mails)"
+                        subtitle: "[Deployment Node]"
+                        backgroundColor: "#ffffff"
+                        color: "#4053d6"
+
+                        children:
+                          - id: "54"
+                            name: "Email Composition Database"
+                            subtitle: "[Container]"
+                            backgroundColor: "#dddddd"
+                            color: "#000000"
+
+          - id: "58"
+            name: "OU-Security"
+            subtitle: "[Deployment Node]"
+            backgroundColor: "#ffffff"
+            color: "#b0084d"
+
+            children:
+              - id: "59"
+                name: "acc-security-logging"
+                subtitle: "[Deployment Node]"
+                backgroundColor: "#ffffff"
+                color: "#b0084d"
+
+                children:
+                  - id: "60"
+                    name: "S3 Bucket"
+                    subtitle: "[Infrastructure Node]"
+                    backgroundColor: "#dddddd"
+                    color: "#3f8624"
+
+                  - id: "61"
+                    name: "CloudWatch Logs"
+                    subtitle: "[Infrastructure Node]"
+                    backgroundColor: "#dddddd"
+                    color: "#b0084d"
+
+              - id: "62"
+                name: "acc-security-monitoring"
+                subtitle: "[Deployment Node]"
+                backgroundColor: "#ffffff"
+                color: "#b0084d"
+
+                children:
+                  - id: "63"
+                    name: "CloudWatch"
+                    subtitle: "[Infrastructure Node]"
+                    backgroundColor: "#dddddd"
+                    color: "#b0084d"
+
+perspectives:
+  - name: Static Structure
+    relations:
+      - from: "1"
+        to: "4"
+        color: "#707070"
+
+      - from: "4"
+        to: "3"
+        label: "Store mail metadata and content"
+        color: "#707070"
+
+      - from: "4"
+        to: "2"
+        label: "Log Email sent event"
+        color: "#707070"
+
+      - from: "1"
+        to: "5"
+        color: "#707070"
+
+      - from: "10"
+        to: "11"
+        label: "Stores metadata of mails"
+        color: "#707070"
+
+      - from: "10"
+        to: "3"
+        label: "Store mail metadata and content"
+        color: "#707070"
+
+      - from: "10"
+        to: "9"
+        label: "Notify recipient"
+        color: "#707070"
+
+      - from: "5"
+        to: "6"
+        label: "Authenticate user"
+        color: "#707070"
+
+      - from: "5"
+        to: "10"
+        label: "Create mails"
+        color: "#707070"
+
+      - from: "6"
+        to: "7"
+        label: "Checks if credentials match"
+        color: "#707070"
+
+      - from: "9"
+        to: "10"
+        label: "Recipient notified"
+        color: "#707070"
+
+      - from: "9"
+        to: "2"
+        label: "Log Email sent event"
+        color: "#707070"
+
+  - name: Deployment - Live
+    relations:
+      - from: "34"
+        to: "48"
+        label: "Controls"
+        color: "#707070"
+      - from: "40"
+        to: "51"
+        label: "Checks if credentials match"
+        color: "#707070"
+      - from: "42"
+        to: "43"
+        label: "Notify recipient"
+        color: "#707070"
+      - from: "42"
+        to: "54"
+        label: "Stores metadata of mails"
+        color: "#707070"
+      - from: "43"
+        to: "42"
+        label: "Recipient notified"
+        color: "#707070"
