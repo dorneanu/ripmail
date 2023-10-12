@@ -1,220 +1,152 @@
 {
   "id" : 1,
   "name" : "Self-Destructing Email Service",
-  "description" : "The sofware architecture of the self-destructing email servic",
-  "lastModifiedDate" : "2023-10-10T19:24:06Z",
+  "description" : "The sofware architecture of the self-destructing email service",
+  "lastModifiedDate" : "2023-10-12T19:59:03Z",
   "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlIHsKICAvLyBTZWUgIGh0dHBzOi8vZ2l0aHViLmNvbS9zdHJ1Y3R1cml6ci9kc2wvYmxvYi9tYXN0ZXIvZG9jcy9sYW5ndWFnZS1yZWZlcmVuY2UubWQjaWRlbnRpZmllci1zY29wZQogIC8vICFpZGVudGlmaWVycyBoaWVyYXJjaGljYWwKCiAgbmFtZSAiU2VsZi1EZXN0cnVjdGluZyBFbWFpbCBTZXJ2aWNlIgogIGRlc2NyaXB0aW9uICJUaGUgc29md2FyZSBhcmNoaXRlY3R1cmUgb2YgdGhlIHNlbGYtZGVzdHJ1Y3RpbmcgZW1haWwgc2VydmljIgoKICBtb2RlbCB7CiAgICB1ID0gcGVyc29uICJDdXN0b21lciIKICAgIGdyb3VwICJTZWxmLURlc3RydWN0aW5nIEVtYWlsIFNlcnZpY2UiIHsKICAgICAgLy8gTG9nZ2luZyBrZWVwcyB0cmFjayBvZiBzZXZlcmFsIGV2ZW50cwogICAgICBsb2dnaW5nID0gc29mdHdhcmVzeXN0ZW0gIkxvZ2dpbmcgU3lzdGVtIiAiTG9ncyBzZXZlcmFsIGV2ZW50cyByZWxhdGVkIHRvIG1haWwgZ2VuZXJhdGlvbiIgewogICAgICAgIHRhZ3MgIlNlcnZpY2UgQVBJIgogICAgICB9IAogICAgICBzdG9yYWdlID0gc29mdHdhcmVzeXN0ZW0gIlN0b3JhZ2UgU3lzdGVtIiAiU3RvcmVzIGVuY3J5cHRlZCBtYWlsIGNvbnRlbnQiIHsKICAgICAgICB0YWdzICJEYXRhYmFzZSIKICAgICAgfQoKICAgICAgLy8gQmFja2VuZCBzeXN0ZW0gcmVzcG9uc2libGUgZm9yIHRoZSBidXNpbmVzcyBsb2dpYwogICAgICBiYWNrZW5kID0gc29mdHdhcmVzeXN0ZW0gIkJhY2tlbmQgU3lzdGVtIiB7CiAgICAgICAgd2ViYXBwbGljYXRpb24gPSBjb250YWluZXIgIldlYiBBcHBsaWNhdGlvbiIKCiAgICAgICAgLy8gU2VydmljZXMvCiAgICAgICAgLy8gLS0tIEF1dGhlbnRpY2F0aW9uIFNlcnZpY2UKICAgICAgICBhdXRoU2VydmljZSA9IGdyb3VwICJBdXRoZW50aWNhdGlvbiBTZXJ2aWNlIiB7CiAgICAgICAgICBhdXRoQVBJID0gY29udGFpbmVyICJBdXRoIFNlcnZpY2UgQVBJIiB7CiAgICAgICAgICAgIHRhZ3MgIkF1dGhTZXJ2aWNlIiAiU2VydmljZSBBUEkiCiAgICAgICAgICB9CiAgICAgICAgICBhdXRoREIgPSBjb250YWluZXIgIkF1dGggU2VydmljZSBEYXRhYmFzZSIgewogICAgICAgICAgICB0YWdzICJBdXRoU2VydmljZSIgIkRhdGFiYXNlIgogICAgICAgICAgICBhdXRoQVBJIC0+IHRoaXMgIkNoZWNrcyBpZiBjcmVkZW50aWFscyBtYXRjaCIKICAgICAgICAgIH0KICAgICAgICB9IAoKICAgICAgICAvLyAtLS0gTm90aWZpY2F0aW9uIFNlcnZpY2UKICAgICAgICBub3RpZmljYXRpb25TZXJ2aWNlID0gZ3JvdXAgIk5vdGlmaWNhdGlvbiBTZXJ2aWNlIiB7CiAgICAgICAgICBub3RpZmljYXRpb25BUEkgPSBjb250YWluZXIgIk5vdGlmaWNhdGlvbiBBUEkiIHsKICAgICAgICAgICAgdGFncyAiTm90aWZpY2F0aW9uU2VydmljZSIgIlNlcnZpY2UgQVBJIgogICAgICAgICAgfSAKICAgICAgICB9ICAKCiAgICAgICAgLy8gLS0tIEVtYWlsIENvbXBvc2l0aW9uIFNlcnZpY2UKICAgICAgICBtYWlsQ29tcG9zaXRpb25TZXJ2aWNlID0gZ3JvdXAgIkVtYWlsIENvbXBvc2l0aW9uIFNlcnZpY2UiIHsKICAgICAgICAgIG1haWxDb21wb3NpdGlvbkFQSSA9IGNvbnRhaW5lciAiRW1haWwgQ29tcG9zaXRpb24gQVBJIiB7CiAgICAgICAgICAgIHRhZ3MgIkVtYWlsQ29tcG9zaXRpb25TZXJ2aWNlIiAiU2VydmljZSBBUEkiCiAgICAgICAgICB9CiAgICAgICAgICBtYWlsREIgPSBjb250YWluZXIgIkVtYWlsIENvbXBvc2l0aW9uIERhdGFiYXNlIiB7CiAgICAgICAgICAgIHRhZ3MgIkVtYWlsY29tcG9zaXRpb25zZXJ2aWNlIiAiRGF0YWJhc2UiCiAgICAgICAgICAgIG1haWxDb21wb3NpdGlvbkFQSSAtPiB0aGlzICJTdG9yZXMgbWV0YWRhdGEgb2YgbWFpbHMiCiAgICAgICAgICB9CgogICAgICAgIH0KICAgICAgICAvLyBTdG9yZSBtYWlsIGRhdGEgYW5kIGVuY3J5cHRlZCBjb250ZW50CiAgICAgICAgbWFpbENvbXBvc2l0aW9uQVBJIC0+IHN0b3JhZ2UgIlN0b3JlIG1haWwgbWV0YWRhdGEgYW5kIGNvbnRlbnQiCgogICAgICAgIC8vIE5vdGlmeSByZWNpcGllbnQKICAgICAgICBtYWlsQ29tcG9zaXRpb25BUEkgLT4gbm90aWZpY2F0aW9uQVBJICJOb3RpZnkgcmVjaXBpZW50IgogICAgICAgIG5vdGlmaWNhdGlvbkFQSSAtPiBtYWlsY29tcG9zaXRpb25BUEkgIlJlY2lwaWVudCBub3RpZmllZCIKCiAgICAgICAgLy8gTG9nIGV2ZW50cwogICAgICAgIG5vdGlmaWNhdGlvbkFQSSAtPiBsb2dnaW5nICJMb2cgRW1haWwgc2VudCBldmVudCIKCiAgICAgICAgLy8gVXNlIGFjY2VzcyB0byB3ZWIgYXBwbGljYXRpb24KICAgICAgICB1IC0+IHdlYmFwcGxpY2F0aW9uCiAgICAgICAgd2ViYXBwbGljYXRpb24gLT4gYXV0aEFQSSAiQXV0aGVudGljYXRlIHVzZXIiCiAgICAgICAgd2ViYXBwbGljYXRpb24gLT4gbWFpbENvbXBvc2l0aW9uQVBJICJDcmVhdGUgbWFpbHMiCiAgICAgIH0gICAgICAgIAogICAgfQoKICAgIHMgPSBzb2Z0d2FyZVN5c3RlbSAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgIHdlYmFwcCA9IGNvbnRhaW5lciAiV2ViIEFwcGxpY2F0aW9uIiAiIiAiU3ByaW5nPyIKICAgICAgZGF0YWJhc2UgPSBjb250YWluZXIgIkRhdGFiYXNlIiAiIiAiUkRCUyIKICAgIH0KCiAgICAvLyBSZWxhdGlvbnNoaXBzIGJldHdlZW4gcGVvcGxlIGFuZCBzb2Z0d2FyZSBzeXN0ZW1zCgogICAgLy8gRGVwbG95bWVudHMKICAgIGxpdmUgPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIkxpdmUiIHsKICAgICAgLy8gQVdTCiAgICAgIGRlcGxveW1lbnROb2RlICJBbWF6b24gV2ViIFNlcnZpY2VzIiB7CiAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIENsb3VkIgoKICAgICAgICAvLyBXaGljaCByZWdpb24KICAgICAgICBkZXBsb3ltZW50Tm9kZSAiZXUtY2VudHJhbC0xIiB7CiAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gUmVnaW9uIgoKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIC8vIE9yZ2FuaXphdGlvbmFsIFVuaXQ6IERldk9wcwogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgZGVwbG95bWVudE5vZGUgIk9VLURldk9wcyIgewogICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgT3JnYW5pemF0aW9uYWwgVW5pdCIKCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJhY2MtZGV2b3BzLXByb2QiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgaW5mcmFzdHJ1Y3R1cmVOb2RlICJHaXRsYWIgU2VydmVyIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRUMyIgogICAgICAgICAgICAgIH0KCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICAgIAogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgLy8gT3JnYW5pemF0aW9uYWwgVW5pdDogVGVjaAogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgb3VfdGVjaCA9IGRlcGxveW1lbnROb2RlICJPVS1UZWNoIiB7CiAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBV1MgT3JnYW5pemF0aW9ucyBPcmdhbml6YXRpb25hbCBVbml0IgoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgImFjYy10ZWNoLXByb2QiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgLy8gRUtTIGNvbnRyb2wgcGxhbmUKICAgICAgICAgICAgICBla3NfdnBjID0gZGVwbG95bWVudE5vZGUgIkVLUyBWUEMiIHsKICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFZQQyBWaXJ0dWFsIHByaXZhdGUgY2xvdWQgVlBDIgoKICAgICAgICAgICAgICAgIGVrc19jb250cm9sX3BsYW5lID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJFS1MgQ29udHJvbCBQbGFuZSIgewogICAgICAgICAgICAgICAgICB0YWdzID0gIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFS1MgQ2xvdWQiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAvLyBFS1MgY2x1c3RlcgogICAgICAgICAgICAgIHdvcmtsb2FkX3ZwYyA9IGRlcGxveW1lbnROb2RlICJXb3JrbG9hZCBWUEMiIHsKICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFZQQyBWaXJ0dWFsIHByaXZhdGUgY2xvdWQgVlBDIgoKICAgICAgICAgICAgICAgIC8vIEFaIDEKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBdmFpbGFiaWxpdHkgWm9uZSAxIiB7CiAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFJlZ2lvbiIKCiAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJTdWJuZXQgMSIgewogICAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFZQQyBWUE4gR2F0ZXdheSIKCiAgICAgICAgICAgICAgICAgICAgZWtzX25vZGVfZ3JvdXAxID0gZGVwbG95bWVudE5vZGUgIkVLUyBNYW5hZ2VkIE5vZGUgR3JvdXAiIHsKICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEVLUyBDbG91ZCIKCiAgICAgICAgICAgICAgICAgICAgICBla3Nfbm9kZV9ncm91cDFfcG9kMSA9IGRlcGxveW1lbnROb2RlICJQb2QgMSIgewogICAgICAgICAgICAgICAgICAgICAgICB0YWdzID0gIkt1YmVybmV0ZXMgLSBwb2QiCiAgICAgICAgICAgICAgICAgICAgICAgIHBvZDFfYXV0aEFQSSA9IGNvbnRhaW5lckluc3RhbmNlIGF1dGhBUEkKICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICBla3Nfbm9kZV9ncm91cDFfcG9kMiA9IGRlcGxveW1lbnROb2RlICJQb2QgMiIgewogICAgICAgICAgICAgICAgICAgICAgICB0YWdzID0gIkt1YmVybmV0ZXMgLSBwb2QiCiAgICAgICAgICAgICAgICAgICAgICAgIHBvZDJfbWFpbENvbXBvc2l0aW9uQVBJID0gY29udGFpbmVySW5zdGFuY2UgbWFpbGNvbXBvc2l0aW9uQVBJCiAgICAgICAgICAgICAgICAgICAgICAgIHBvZDJfbm90aWZpY2F0aW9uQVBJID0gY29udGFpbmVySW5zdGFuY2Ugbm90aWZpY2F0aW9uQVBJCgogICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgLy8gQVogMgogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkF2YWlsYWJpbGl0eSBab25lIDIiIHsKICAgICAgICAgICAgICAgICAgdGFncyA9ICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gUmVnaW9uIgoKICAgICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlN1Ym5ldCAxIiB7CiAgICAgICAgICAgICAgICAgICAgdGFncyA9ICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gVlBDIFZQTiBHYXRld2F5IgoKICAgICAgICAgICAgICAgICAgICBla3Nfbm9kZV9ncm91cDIgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIkVLUyBNYW5hZ2VkIE5vZGUgR3JvdXAiIHsKICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEVLUyBDbG91ZCIKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAKCiAgICAgICAgICAgICAgLy8gRHluYW1vREIgaW5zdGFuY2VzCiAgICAgICAgICAgICAgZGJzID0gZ3JvdXAgIkRhdGFiYXNlcyIgewogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkRCIFZQQyIgewogICAgICAgICAgICAgICAgICB0YWdzID0gIkFtYXpvbiBXZWIgU2VydmljZXMgLSBWUEMgVmlydHVhbCBwcml2YXRlIGNsb3VkIFZQQyIKCiAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEeW5hbW9EQiAoQXV0aCkiIHsKICAgICAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRHluYW1vREIiCgogICAgICAgICAgICAgICAgICAgIGxpdmVVc2VyREIgPSBjb250YWluZXJJbnN0YW5jZSBhdXRoREIKICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkR5bmFtb0RCIChNYWlscykiIHsKICAgICAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRHluYW1vREIiCgogICAgICAgICAgICAgICAgICAgIGxpdmVNYWlsREIgPSBjb250YWluZXJJbnN0YW5jZSBtYWlsREIKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgfQoKICAgICAgICAgIC8vIFJlbGF0aW9uc2hpcHMKICAgICAgICAgICMgcG9kMV9hdXRoQVBJIC0+IGxpdmVVc2VyREIgCiAgICAgICAgICAjIHBvZDFfYXV0aEFQSSAtPiBsaXZlTWFpbERCCgogICAgICAgICAgZWtzX2NvbnRyb2xfcGxhbmUgLT4gZWtzX25vZGVfZ3JvdXAxICJDb250cm9scyIKICAgICAgICAgIGVrc19jb250cm9sX3BsYW5lIC0+IGVrc19ub2RlX2dyb3VwMiAiQ29udHJvbHMiCgogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgLy8gT3JnYW5pemF0aW9uYWwgVW5pdDogU2VjdXJpdHkKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIGRlcGxveW1lbnROb2RlICJPVS1TZWN1cml0eSIgewogICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgT3JnYW5pemF0aW9uYWwgVW5pdCIKCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJhY2Mtc2VjdXJpdHktbG9nZ2luZyIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBV1MgT3JnYW5pemF0aW9ucyBBY2NvdW50IgoKICAgICAgICAgICAgICBzM19sb2dnaW5nID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJTMyBCdWNrZXQiIHsKICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBTaW1wbGUgU3RvcmFnZSBTZXJ2aWNlIgogICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgaW5mcmFzdHJ1Y3R1cmVOb2RlICJDbG91ZFdhdGNoIExvZ3MiIHsKICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBDbG91ZFdhdGNoIExvZ3MiCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiYWNjLXNlY3VyaXR5LW1vbml0b3JpbmciIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgaW5mcmFzdHJ1Y3R1cmVOb2RlICJDbG91ZFdhdGNoIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQ2xvdWRXYXRjaCBBbGFybSIKICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9ICAKICAgICAgfQogICAgfQogIH0KCiAgdmlld3MgewogICAgLy8gU3lzdGVtIGNvbnRleHQKICAgIHN5c3RlbUNvbnRleHQgcyAiU3lzdGVtQ29udGV4dCIgewogICAgICBpbmNsdWRlICoKICAgICAgZGVzY3JpcHRpb24gIlRoZSBzeXN0ZW0gY29udGV4dCBkaWFncmFtIGZvciB0aGUgc2VsZi1kZXN0cnVjdGluZyBtYWlsIHNlcnZpY2UiCiAgICB9CgogICAgLy8gLS0gQ29udGFpbmVycyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgLy8gQmFja2VuZAogICAgY29udGFpbmVyIGJhY2tlbmQgIkNvbnRhaW5lcnNfQWxsIiB7CiAgICAgIGluY2x1ZGUgKgogICAgICBhdXRvbGF5b3V0CiAgICB9CiAgICAvLyAtLS0gQXV0aGVudGljYXRpb24gU2VydmljZSAKICAgIGNvbnRhaW5lciBiYWNrZW5kICJDb250YWluZXJzX0F1dGhlbnRpY2F0aW9uU2VydmljZSIgewogICAgICBpbmNsdWRlIC0+YXV0aFNlcnZpY2UtPgogICAgICBhdXRvbGF5b3V0CiAgICB9CiAgICAvLyAtLS0gTm90aWZpY2F0aW9uIFNlcnZpY2UgCiAgICBjb250YWluZXIgYmFja2VuZCAiQ29udGFpbmVyc19Ob3RpZmljYXRpb25TZXJ2aWNlIiB7CiAgICAgIGluY2x1ZGUgLT5ub3RpZmljYXRpb25TZXJ2aWNlLT4KICAgICAgYXV0b2xheW91dAogICAgfQogICAgIyAvLyAtLS0gRW1haWwgQ29tcG9zaXRpb24gU2VydmljZSAKICAgIGNvbnRhaW5lciBiYWNrZW5kICJDb250YWluZXJzX01haWxDb21wb3NpdGlvblNlcnZpY2UiIHsKICAgICAgaW5jbHVkZSAtPm1haWxDb21wb3NpdGlvblNlcnZpY2UtPgogICAgICBhdXRvbGF5b3V0CiAgICB9CgogICAgLy8gQ29udGFpbmVyIGNvbnRleHQKICAgICMgY29udGFpbmVyIHMgIkNvbnRhaW5lcnMiIHsKICAgICMgICBpbmNsdWRlICoKICAgICMgICBkZXNjcmlwdGlvbiAiVGhlIGNvbnRhaW5lciBkaWFncmFtIGZvciB0aGUgc2VsZi1kZXN0cnVjdGluZyBtYWlsIHNlcnZpY2UiCiAgICAjIH0KCiAgICAvLyBXb3JrbG9hZCBsaXZlCiAgICBkZXBsb3ltZW50IGJhY2tlbmQgbGl2ZSAiV29ya2xvYWREZXBsb3ltZW50IiB7CiAgICAgIGluY2x1ZGUgLT5vdV90ZWNoLT4KICAgICAgZGVzY3JpcHRpb24gIkRlcGxveW1lbnQgb2YgdGhlIHdvcmtsb2FkIgogICAgfQoKICAgIC8vIERlcGxveW1lbnQgbGl2ZQogICAgZGVwbG95bWVudCBiYWNrZW5kIGxpdmUgIkxpdmVEZXBsb3ltZW50IiAgewogICAgICBpbmNsdWRlICoKICAgICAgLy8gYXV0b0xheW91dCBscgogICAgICBkZXNjcmlwdGlvbiAiQW4gZXhhbXBsZSBsaXZlIGRlcGxveW1lbnQgZm9yIHRoZSBzZWxmLWRlc3RydWN0aW5nIGVtYWlsIHNlcnZpY2UiCiAgICB9CgoKICAgIC8vIFRoZW1lcwogICAgLy8gWW91IGNhbiBjb21iaW5lIG11bHRpcGxlIHRoZW1lcyEKICAgIHRoZW1lIGh0dHBzOi8vc3RhdGljLnN0cnVjdHVyaXpyLmNvbS90aGVtZXMvYW1hem9uLXdlYi1zZXJ2aWNlcy0yMDIzLjAxLjMxL3RoZW1lLmpzb24KICAgIHRoZW1lIGh0dHBzOi8vc3RhdGljLnN0cnVjdHVyaXpyLmNvbS90aGVtZXMva3ViZXJuZXRlcy12MC4zL3RoZW1lLmpzb24KCiAgICAvLyBFeHRyYSBTdHlsaW5nCiAgICBzdHlsZXMgewogICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgZm9udFNpemUgMjIKICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgfQogICAgICBlbGVtZW50ICJTZXJ2aWNlIEFQSSIgewogICAgICAgIHNoYXBlIGhleGFnb24KICAgICAgfQogICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgIH0KICAgIH0KCiAgfQp9Cg=="
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICAvLyBTZWUgIGh0dHBzOi8vZ2l0aHViLmNvbS9zdHJ1Y3R1cml6ci9kc2wvYmxvYi9tYXN0ZXIvZG9jcy9sYW5ndWFnZS1yZWZlcmVuY2UubWQjaWRlbnRpZmllci1zY29wZQogIC8vICFpZGVudGlmaWVycyBoaWVyYXJjaGljYWwKCiAgbmFtZSAiU2VsZi1EZXN0cnVjdGluZyBFbWFpbCBTZXJ2aWNlIgogIGRlc2NyaXB0aW9uICJUaGUgc29md2FyZSBhcmNoaXRlY3R1cmUgb2YgdGhlIHNlbGYtZGVzdHJ1Y3RpbmcgZW1haWwgc2VydmljZSIKCiAgbW9kZWwgewogICAgc2VuZGVyID0gcGVyc29uICJTZW5kZXIiICJTZW5kZXIgY3JlYXRlcyBzZWxmLWRlc3RydWN0aW5nIGVtYWlsIiB7CiAgICAgIHRhZ3MgIlNlbmRlciIKICAgIH0KICAgIHJlY2lwaWVudCA9IHBlcnNvbiAiUmVjaXBpZW50IiAiUmVjaXBpZW50IHJlY2VpdmVzIHNlbGYtZGVzdHJ1Y3RpbmcgZW1haWwiIHsKICAgICAgdGFncyAiUmVjaXBpZW50IgogICAgfQoKICAgIGdyb3VwICJTZWxmLURlc3RydWN0aW5nIEVtYWlsIFNlcnZpY2UiIHsKICAgICAgLy8gTG9nZ2luZyBrZWVwcyB0cmFjayBvZiBzZXZlcmFsIGV2ZW50cwogICAgICBsb2dnaW5nID0gc29mdHdhcmVzeXN0ZW0gIkxvZ2dpbmcgU3lzdGVtIiAiTG9ncyBzZXZlcmFsIGV2ZW50cyByZWxhdGVkIHRvIG1haWwgZ2VuZXJhdGlvbiIgewogICAgICAgIHRhZ3MgIlNlcnZpY2UgQVBJIgogICAgICB9IAogICAgICBzdG9yYWdlID0gc29mdHdhcmVzeXN0ZW0gIlN0b3JhZ2UgU3lzdGVtIiAiU3RvcmVzIGVuY3J5cHRlZCBtYWlsIGNvbnRlbnQiIHsKICAgICAgICB0YWdzICJEYXRhYmFzZSIKICAgICAgfQoKICAgICAgbm90aWZpY2F0aW9uID0gc29mdHdhcmVzeXN0ZW0gIk5vdGlmaWNhdGlvbiBTeXN0ZW0iICJTZW5kcyBub3RpZmljYXRpb24gdG8gcmVjaXBpZW50IHRvIHZpZXcgZW1haWwiIHsKICAgICAgICB0YWdzICJTeXN0ZW0iCgogICAgICAgIC8vIC0tLSBOb3RpZmljYXRpb24gU2VydmljZQogICAgICAgIG5vdGlmaWNhdGlvblNlcnZpY2UgPSBncm91cCAiTm90aWZpY2F0aW9uIFNlcnZpY2UiIHsKICAgICAgICAgIG5vdGlmaWNhdGlvbkFQSSA9IGNvbnRhaW5lciAiTm90aWZpY2F0aW9uIEFQSSIgewogICAgICAgICAgICB0YWdzICJOb3RpZmljYXRpb25TZXJ2aWNlIiAiU2VydmljZSBBUEkiCiAgICAgICAgICB9IAogICAgICAgIH0gIAogICAgICB9CgoKICAgICAgLy8gQmFja2VuZCBzeXN0ZW0gcmVzcG9uc2libGUgZm9yIHRoZSBidXNpbmVzcyBsb2dpYwogICAgICBiYWNrZW5kID0gc29mdHdhcmVzeXN0ZW0gIkJhY2tlbmQgU3lzdGVtIiAiQ29udGFpbnMgbG9naWMgaG93IHNlbGYtZGVzdHJ1Y3RpbmcgbWFpbHMgc2hvdWxkIGJlIGNyZWF0ZWQgYW5kIGRpc3BhdGNoZWQgdG8gdGhlIHJlY2lwaWVudC4iIHsKICAgICAgICB0YWdzICJCYWNrZW5kU3lzdGVtIgogICAgICAgIHdlYmFwcGxpY2F0aW9uID0gY29udGFpbmVyICJXZWIgQXBwbGljYXRpb24iCgogICAgICAgIC8vIFNlcnZpY2VzLwogICAgICAgIC8vIC0tLSBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlCiAgICAgICAgYXV0aFNlcnZpY2UgPSBncm91cCAiQXV0aGVudGljYXRpb24gU2VydmljZSIgewogICAgICAgICAgYXV0aEFQSSA9IGNvbnRhaW5lciAiQXV0aCBTZXJ2aWNlIEFQSSIgewogICAgICAgICAgICB0YWdzICJBdXRoU2VydmljZSIgIlNlcnZpY2UgQVBJIgogICAgICAgICAgfQogICAgICAgICAgYXV0aERCID0gY29udGFpbmVyICJBdXRoIFNlcnZpY2UgRGF0YWJhc2UiIHsKICAgICAgICAgICAgdGFncyAiQXV0aFNlcnZpY2UiICJEYXRhYmFzZSIKICAgICAgICAgICAgYXV0aEFQSSAtPiB0aGlzICJDaGVja3MgaWYgY3JlZGVudGlhbHMgbWF0Y2giCiAgICAgICAgICB9CiAgICAgICAgfSAKCgogICAgICAgIC8vIC0tLSBFbWFpbCBDb21wb3NpdGlvbiBTZXJ2aWNlCiAgICAgICAgbWFpbENvbXBvc2l0aW9uU2VydmljZSA9IGdyb3VwICJFbWFpbCBDb21wb3NpdGlvbiBTZXJ2aWNlIiB7CiAgICAgICAgICBtYWlsQ29tcG9zaXRpb25BUEkgPSBjb250YWluZXIgIkVtYWlsIENvbXBvc2l0aW9uIEFQSSIgewogICAgICAgICAgICB0YWdzICJFbWFpbENvbXBvc2l0aW9uU2VydmljZSIgIlNlcnZpY2UgQVBJIgogICAgICAgICAgfQogICAgICAgICAgbWFpbERCID0gY29udGFpbmVyICJFbWFpbCBDb21wb3NpdGlvbiBEYXRhYmFzZSIgewogICAgICAgICAgICB0YWdzICJFbWFpbGNvbXBvc2l0aW9uc2VydmljZSIgIkRhdGFiYXNlIgogICAgICAgICAgICBtYWlsQ29tcG9zaXRpb25BUEkgLT4gdGhpcyAiU3RvcmVzIG1ldGFkYXRhIG9mIG1haWxzIgogICAgICAgICAgfQoKICAgICAgICB9CgogICAgICAgIC8vIC0tLSBFbWFpbCBDb21wb3NpdGlvbiBTZXJ2aWNlCiAgICAgICAgdmlld0VtYWlsU2VydmljZSA9IGdyb3VwICJWaWV3IEVtYWlsIFNlcnZpY2UiIHsKICAgICAgICAgIHZpZXdFbWFpbEZyb250ZW5kID0gY29udGFpbmVyICJFbWFpbCBWaWV3IEZyb250ZW5kIiB7CiAgICAgICAgICAgIHRhZ3MgIlZpZXdFbWFpbFNlcnZpY2UiIAogICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgLy8gU3RvcmUgbWFpbCBkYXRhIGFuZCBlbmNyeXB0ZWQgY29udGVudAogICAgICAgIG1haWxDb21wb3NpdGlvbkFQSSAtPiBzdG9yYWdlICJTdG9yZSBtYWlsIG1ldGFkYXRhIGFuZCBjb250ZW50IgoKICAgICAgICAvLyBOb3RpZnkgcmVjaXBpZW50CiAgICAgICAgbWFpbENvbXBvc2l0aW9uQVBJIC0+IG5vdGlmaWNhdGlvbkFQSSAiTm90aWZ5IHJlY2lwaWVudCIKICAgICAgICBub3RpZmljYXRpb25BUEkgLT4gbWFpbGNvbXBvc2l0aW9uQVBJICJSZWNpcGllbnQgbm90aWZpZWQiCgogICAgICAgIC8vIExvZyBldmVudHMKICAgICAgICBub3RpZmljYXRpb25BUEkgLT4gbG9nZ2luZyAiTG9nIEVtYWlsIHNlbnQgZXZlbnQiCgogICAgICAgIC8vIFNlbmRlciBjcmVhdGVzIG5ldyBlbWFpbCAKICAgICAgICBzZW5kZXIgLT4gd2ViYXBwbGljYXRpb24gIkNyZWF0ZSBuZXcgbWFpbCIKICAgICAgICB3ZWJhcHBsaWNhdGlvbiAtPiBhdXRoQVBJICJBdXRoZW50aWNhdGUgdXNlciIKICAgICAgICB3ZWJhcHBsaWNhdGlvbiAtPiBtYWlsQ29tcG9zaXRpb25BUEkgIkNyZWF0ZSBtYWlscyIKICAgICAgICBub3RpZmljYXRpb24gLT4gcmVjaXBpZW50ICJTZW5kIG91dCBub3RpZmljYXRpb24iCiAgICAgICAgYmFja2VuZCAtPiBsb2dnaW5nICJDcmVhdGUgZXZlbnRzIgoKICAgICAgICAvLyBSZWNpcGllbnQgcmVjZWl2ZXMgbmV3IG1haWwKICAgICAgICByZWNpcGllbnQgLT4gd2ViYXBwbGljYXRpb24gIlZpZXcgc2VsZi1kZXN0cnVjdGluZyBtYWlsIgogICAgICAgIHdlYmFwcGxpY2F0aW9uIC0+IHZpZXdFbWFpbEZyb250ZW5kICJWaWV3IGVtYWlsIgogICAgICAgIHZpZXdFbWFpbEZyb250ZW5kIC0+IG1haWxEQiAKICAgICAgICB2aWV3RW1haWxGcm9udGVuZCAtPiBzdG9yYWdlCgoKICAgICAgfSAgICAgICAgCiAgICB9CgogICAgLy8gRGVwbG95bWVudHMKICAgIGxpdmUgPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIkxpdmUiIHsKICAgICAgLy8gQVdTCiAgICAgIGRlcGxveW1lbnROb2RlICJBbWF6b24gV2ViIFNlcnZpY2VzIiB7CiAgICAgICAgdGFncyAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIENsb3VkIgoKICAgICAgICAvLyBXaGljaCByZWdpb24KICAgICAgICBkZXBsb3ltZW50Tm9kZSAiZXUtY2VudHJhbC0xIiB7CiAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gUmVnaW9uIgoKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIC8vIE9yZ2FuaXphdGlvbmFsIFVuaXQ6IERldk9wcwogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgZGVwbG95bWVudE5vZGUgIk9VLURldk9wcyIgewogICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgT3JnYW5pemF0aW9uYWwgVW5pdCIKCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJhY2MtZGV2b3BzLXByb2QiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgaW5mcmFzdHJ1Y3R1cmVOb2RlICJHaXRsYWIgU2VydmVyIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRUMyIgogICAgICAgICAgICAgIH0KCiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICAgIAogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgLy8gT3JnYW5pemF0aW9uYWwgVW5pdDogVGVjaAogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgb3VfdGVjaCA9IGRlcGxveW1lbnROb2RlICJPVS1UZWNoIiB7CiAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBV1MgT3JnYW5pemF0aW9ucyBPcmdhbml6YXRpb25hbCBVbml0IgoKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgImFjYy10ZWNoLXByb2QiIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgLy8gRUtTIGNvbnRyb2wgcGxhbmUKICAgICAgICAgICAgICBla3NfdnBjID0gZGVwbG95bWVudE5vZGUgIkVLUyBWUEMiIHsKICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFZQQyBWaXJ0dWFsIHByaXZhdGUgY2xvdWQgVlBDIgoKICAgICAgICAgICAgICAgIGVrc19jb250cm9sX3BsYW5lID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJFS1MgQ29udHJvbCBQbGFuZSIgewogICAgICAgICAgICAgICAgICB0YWdzID0gIkFtYXpvbiBXZWIgU2VydmljZXMgLSBFS1MgQ2xvdWQiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAvLyBFS1MgY2x1c3RlcgogICAgICAgICAgICAgIHdvcmtsb2FkX3ZwYyA9IGRlcGxveW1lbnROb2RlICJXb3JrbG9hZCBWUEMiIHsKICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFZQQyBWaXJ0dWFsIHByaXZhdGUgY2xvdWQgVlBDIgoKICAgICAgICAgICAgICAgIC8vIEFaIDEKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBdmFpbGFiaWxpdHkgWm9uZSAxIiB7CiAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFJlZ2lvbiIKCiAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJTdWJuZXQgMSIgewogICAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIFZQQyBWUE4gR2F0ZXdheSIKCiAgICAgICAgICAgICAgICAgICAgZWtzX25vZGVfZ3JvdXAxID0gZGVwbG95bWVudE5vZGUgIkVLUyBNYW5hZ2VkIE5vZGUgR3JvdXAiIHsKICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEVLUyBDbG91ZCIKCiAgICAgICAgICAgICAgICAgICAgICBla3Nfbm9kZV9ncm91cDFfcG9kMSA9IGRlcGxveW1lbnROb2RlICJQb2QgMSIgewogICAgICAgICAgICAgICAgICAgICAgICB0YWdzID0gIkt1YmVybmV0ZXMgLSBwb2QiCiAgICAgICAgICAgICAgICAgICAgICAgIHBvZDFfYXV0aEFQSSA9IGNvbnRhaW5lckluc3RhbmNlIGF1dGhBUEkKICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICBla3Nfbm9kZV9ncm91cDFfcG9kMiA9IGRlcGxveW1lbnROb2RlICJQb2QgMiIgewogICAgICAgICAgICAgICAgICAgICAgICB0YWdzID0gIkt1YmVybmV0ZXMgLSBwb2QiCiAgICAgICAgICAgICAgICAgICAgICAgIHBvZDJfbWFpbENvbXBvc2l0aW9uQVBJID0gY29udGFpbmVySW5zdGFuY2UgbWFpbGNvbXBvc2l0aW9uQVBJCiAgICAgICAgICAgICAgICAgICAgICAgIHBvZDJfbm90aWZpY2F0aW9uQVBJID0gY29udGFpbmVySW5zdGFuY2Ugbm90aWZpY2F0aW9uQVBJCgogICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgLy8gQVogMgogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkF2YWlsYWJpbGl0eSBab25lIDIiIHsKICAgICAgICAgICAgICAgICAgdGFncyA9ICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gUmVnaW9uIgoKICAgICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlN1Ym5ldCAxIiB7CiAgICAgICAgICAgICAgICAgICAgdGFncyA9ICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gVlBDIFZQTiBHYXRld2F5IgoKICAgICAgICAgICAgICAgICAgICBla3Nfbm9kZV9ncm91cDIgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIkVLUyBNYW5hZ2VkIE5vZGUgR3JvdXAiIHsKICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgPSAiQW1hem9uIFdlYiBTZXJ2aWNlcyAtIEVLUyBDbG91ZCIKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAKCiAgICAgICAgICAgICAgLy8gRHluYW1vREIgaW5zdGFuY2VzCiAgICAgICAgICAgICAgZGJzID0gZ3JvdXAgIkRhdGFiYXNlcyIgewogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkRCIFZQQyIgewogICAgICAgICAgICAgICAgICB0YWdzID0gIkFtYXpvbiBXZWIgU2VydmljZXMgLSBWUEMgVmlydHVhbCBwcml2YXRlIGNsb3VkIFZQQyIKCiAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEeW5hbW9EQiAoQXV0aCkiIHsKICAgICAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRHluYW1vREIiCgogICAgICAgICAgICAgICAgICAgIGxpdmVVc2VyREIgPSBjb250YWluZXJJbnN0YW5jZSBhdXRoREIKICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkR5bmFtb0RCIChNYWlscykiIHsKICAgICAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gRHluYW1vREIiCgogICAgICAgICAgICAgICAgICAgIGxpdmVNYWlsREIgPSBjb250YWluZXJJbnN0YW5jZSBtYWlsREIKICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgfQoKICAgICAgICAgIC8vIFJlbGF0aW9uc2hpcHMKICAgICAgICAgICMgcG9kMV9hdXRoQVBJIC0+IGxpdmVVc2VyREIgCiAgICAgICAgICAjIHBvZDFfYXV0aEFQSSAtPiBsaXZlTWFpbERCCgogICAgICAgICAgZWtzX2NvbnRyb2xfcGxhbmUgLT4gZWtzX25vZGVfZ3JvdXAxICJDb250cm9scyIKICAgICAgICAgIGVrc19jb250cm9sX3BsYW5lIC0+IGVrc19ub2RlX2dyb3VwMiAiQ29udHJvbHMiCgogICAgICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICAgLy8gT3JnYW5pemF0aW9uYWwgVW5pdDogU2VjdXJpdHkKICAgICAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAgIGRlcGxveW1lbnROb2RlICJPVS1TZWN1cml0eSIgewogICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgT3JnYW5pemF0aW9uYWwgVW5pdCIKCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJhY2Mtc2VjdXJpdHktbG9nZ2luZyIgewogICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBBV1MgT3JnYW5pemF0aW9ucyBBY2NvdW50IgoKICAgICAgICAgICAgICBzM19sb2dnaW5nID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJTMyBCdWNrZXQiIHsKICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBTaW1wbGUgU3RvcmFnZSBTZXJ2aWNlIgogICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgaW5mcmFzdHJ1Y3R1cmVOb2RlICJDbG91ZFdhdGNoIExvZ3MiIHsKICAgICAgICAgICAgICAgIHRhZ3MgIkFtYXpvbiBXZWIgU2VydmljZXMgLSBDbG91ZFdhdGNoIExvZ3MiCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiYWNjLXNlY3VyaXR5LW1vbml0b3JpbmciIHsKICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQVdTIE9yZ2FuaXphdGlvbnMgQWNjb3VudCIKCiAgICAgICAgICAgICAgaW5mcmFzdHJ1Y3R1cmVOb2RlICJDbG91ZFdhdGNoIiB7CiAgICAgICAgICAgICAgICB0YWdzICJBbWF6b24gV2ViIFNlcnZpY2VzIC0gQ2xvdWRXYXRjaCBBbGFybSIKICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9ICAKICAgICAgfQogICAgfQogIH0KCiAgdmlld3MgewogICAgLy8gU3lzdGVtIExhbmRzY2FwZQogICAgc3lzdGVtbGFuZHNjYXBlICJTeXN0ZW1MYW5kc2NhcGUiIHsKICAgICAgaW5jbHVkZSAqCiAgICAgICMgYXV0b0xheW91dAogICAgfQoKICAgIC8vIC0tIENvbnRhaW5lcnMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIC8vIEJhY2tlbmQKICAgIGNvbnRhaW5lciBiYWNrZW5kICJDb250YWluZXJzX0FsbCIgewogICAgICBpbmNsdWRlICoKICAgICAgIyBhdXRvbGF5b3V0CiAgICB9CiAgICAvLyAtLS0gQXV0aGVudGljYXRpb24gU2VydmljZSAKICAgIGNvbnRhaW5lciBiYWNrZW5kICJDb250YWluZXJzX0F1dGhlbnRpY2F0aW9uU2VydmljZSIgewogICAgICBpbmNsdWRlIC0+YXV0aFNlcnZpY2UtPgogICAgICBhdXRvbGF5b3V0CiAgICB9CiAgICAvLyAtLS0gTm90aWZpY2F0aW9uIFNlcnZpY2UgCiAgICBjb250YWluZXIgYmFja2VuZCAiQ29udGFpbmVyc19Ob3RpZmljYXRpb25TZXJ2aWNlIiB7CiAgICAgIGluY2x1ZGUgLT5ub3RpZmljYXRpb25TZXJ2aWNlLT4KICAgICAgYXV0b2xheW91dAogICAgfQogICAgIyAvLyAtLS0gRW1haWwgQ29tcG9zaXRpb24gU2VydmljZSAKICAgIGNvbnRhaW5lciBiYWNrZW5kICJDb250YWluZXJzX01haWxDb21wb3NpdGlvblNlcnZpY2UiIHsKICAgICAgaW5jbHVkZSAtPm1haWxDb21wb3NpdGlvblNlcnZpY2UtPgogICAgICBhdXRvbGF5b3V0CiAgICB9CgogICAgLy8gQ29udGFpbmVyIGNvbnRleHQKICAgICMgY29udGFpbmVyIHMgIkNvbnRhaW5lcnMiIHsKICAgICMgICBpbmNsdWRlICoKICAgICMgICBkZXNjcmlwdGlvbiAiVGhlIGNvbnRhaW5lciBkaWFncmFtIGZvciB0aGUgc2VsZi1kZXN0cnVjdGluZyBtYWlsIHNlcnZpY2UiCiAgICAjIH0KCiAgICAvLyBXb3JrbG9hZCBsaXZlCiAgICBkZXBsb3ltZW50IGJhY2tlbmQgbGl2ZSAiV29ya2xvYWREZXBsb3ltZW50IiB7CiAgICAgIGluY2x1ZGUgLT5vdV90ZWNoLT4KICAgICAgZGVzY3JpcHRpb24gIkRlcGxveW1lbnQgb2YgdGhlIHdvcmtsb2FkIgogICAgfQoKICAgIC8vIERlcGxveW1lbnQgbGl2ZQogICAgZGVwbG95bWVudCBiYWNrZW5kIGxpdmUgIkxpdmVEZXBsb3ltZW50IiAgewogICAgICBpbmNsdWRlICoKICAgICAgLy8gYXV0b0xheW91dCBscgogICAgICBkZXNjcmlwdGlvbiAiQW4gZXhhbXBsZSBsaXZlIGRlcGxveW1lbnQgZm9yIHRoZSBzZWxmLWRlc3RydWN0aW5nIGVtYWlsIHNlcnZpY2UiCiAgICB9CgoKICAgIC8vIFRoZW1lcwogICAgLy8gWW91IGNhbiBjb21iaW5lIG11bHRpcGxlIHRoZW1lcyEKICAgIHRoZW1lIGh0dHBzOi8vc3RhdGljLnN0cnVjdHVyaXpyLmNvbS90aGVtZXMvYW1hem9uLXdlYi1zZXJ2aWNlcy0yMDIzLjAxLjMxL3RoZW1lLmpzb24KICAgIHRoZW1lIGh0dHBzOi8vc3RhdGljLnN0cnVjdHVyaXpyLmNvbS90aGVtZXMva3ViZXJuZXRlcy12MC4zL3RoZW1lLmpzb24KCiAgICAvLyBFeHRyYSBTdHlsaW5nCiAgICBzdHlsZXMgewogICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgZm9udFNpemUgMjIKICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgfQogICAgICBlbGVtZW50ICJTZW5kZXIiIHsKICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgYmFja2dyb3VuZCAjOEZCNUZFCiAgICAgICAgc2hhcGUgUGVyc29uCiAgICAgIH0KICAgICAgZWxlbWVudCAiUmVjaXBpZW50IiB7CiAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgIGJhY2tncm91bmQgI0U5NzQ1MQogICAgICAgIHNoYXBlIFBlcnNvbgogICAgICB9CiAgICAgIGVsZW1lbnQgIlNlcnZpY2UgQVBJIiB7CiAgICAgICAgc2hhcGUgaGV4YWdvbgogICAgICB9CiAgICAgIGVsZW1lbnQgIkRhdGFiYXNlIiB7CiAgICAgICAgc2hhcGUgY3lsaW5kZXIKICAgICAgfQogICAgICBlbGVtZW50ICJCYWNrZW5kU3lzdGVtIiB7CiAgICAgICAgYmFja2dyb3VuZCAjRDNEM0QzCiAgICAgIH0KICAgIH0KCiAgfQp9Cg=="
   },
   "configuration" : { },
   "model" : {
     "people" : [ {
-      "id" : "1",
-      "tags" : "Element,Person",
+      "id" : "2",
+      "tags" : "Element,Person,Recipient",
       "properties" : {
-        "structurizr.dsl.identifier" : "u"
+        "structurizr.dsl.identifier" : "recipient"
       },
-      "name" : "Customer",
+      "name" : "Recipient",
+      "description" : "Recipient receives self-destructing email",
       "relationships" : [ {
-        "id" : "20",
-        "sourceId" : "1",
-        "destinationId" : "4",
-        "linkedRelationshipId" : "19"
-      }, {
-        "id" : "19",
+        "id" : "34",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "47e18db9-f02f-4413-82a0-e0566191f4d8"
+          "structurizr.dsl.identifier" : "182664b2-f06e-408a-a061-e4b659cae810"
+        },
+        "sourceId" : "2",
+        "destinationId" : "8",
+        "description" : "View self-destructing mail"
+      }, {
+        "id" : "35",
+        "sourceId" : "2",
+        "destinationId" : "7",
+        "description" : "View self-destructing mail",
+        "linkedRelationshipId" : "34"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "1",
+      "tags" : "Element,Person,Sender",
+      "properties" : {
+        "structurizr.dsl.identifier" : "sender"
+      },
+      "name" : "Sender",
+      "description" : "Sender creates self-destructing email",
+      "relationships" : [ {
+        "id" : "28",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "b9a0d664-7957-44e1-9fd5-dfd17a917dba"
         },
         "sourceId" : "1",
-        "destinationId" : "5"
+        "destinationId" : "8",
+        "description" : "Create new mail"
+      }, {
+        "id" : "29",
+        "sourceId" : "1",
+        "destinationId" : "7",
+        "description" : "Create new mail",
+        "linkedRelationshipId" : "28"
       } ],
       "location" : "Unspecified"
     } ],
     "softwareSystems" : [ {
       "id" : "4",
-      "tags" : "Element,Software System",
+      "tags" : "Element,Software System,Database",
       "properties" : {
-        "structurizr.dsl.identifier" : "backend"
+        "structurizr.dsl.identifier" : "storage"
       },
-      "name" : "Backend System",
+      "name" : "Storage System",
+      "description" : "Stores encrypted mail content",
+      "group" : "Self-Destructing Email Service",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "5",
+      "tags" : "Element,Software System,System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "notification"
+      },
+      "name" : "Notification System",
+      "description" : "Sends notification to recipient to view email",
       "relationships" : [ {
-        "id" : "14",
-        "sourceId" : "4",
+        "id" : "27",
+        "sourceId" : "5",
         "destinationId" : "3",
-        "description" : "Store mail metadata and content",
-        "linkedRelationshipId" : "13"
-      }, {
-        "id" : "18",
-        "sourceId" : "4",
-        "destinationId" : "2",
         "description" : "Log Email sent event",
-        "linkedRelationshipId" : "17"
+        "linkedRelationshipId" : "26"
+      }, {
+        "id" : "32",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2b0761b2-5c15-40c5-8976-755c4cf5ceb8"
+        },
+        "sourceId" : "5",
+        "destinationId" : "2",
+        "description" : "Send out notification"
+      }, {
+        "id" : "25",
+        "sourceId" : "5",
+        "destinationId" : "7",
+        "description" : "Recipient notified",
+        "linkedRelationshipId" : "22"
+      }, {
+        "id" : "24",
+        "sourceId" : "5",
+        "destinationId" : "12",
+        "description" : "Recipient notified",
+        "linkedRelationshipId" : "22"
       } ],
       "group" : "Self-Destructing Email Service",
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "11",
-        "tags" : "Element,Container,Emailcompositionservice,Database",
-        "properties" : {
-          "structurizr.dsl.identifier" : "maildb"
-        },
-        "name" : "Email Composition Database",
-        "group" : "Email Composition Service",
-        "documentation" : { }
-      }, {
-        "id" : "9",
+        "id" : "6",
         "tags" : "Element,Container,NotificationService,Service API",
         "properties" : {
           "structurizr.dsl.identifier" : "notificationapi"
         },
         "name" : "Notification API",
         "relationships" : [ {
-          "id" : "17",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "f9d59f29-1b5e-46f3-949c-9d73a462ad65"
-          },
-          "sourceId" : "9",
-          "destinationId" : "2",
-          "description" : "Log Email sent event"
-        }, {
-          "id" : "16",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "dd1c32b9-2a60-4ad6-9d07-b7314a79ebca"
-          },
-          "sourceId" : "9",
-          "destinationId" : "10",
-          "description" : "Recipient notified"
-        } ],
-        "group" : "Notification Service",
-        "documentation" : { }
-      }, {
-        "id" : "7",
-        "tags" : "Element,Container,AuthService,Database",
-        "properties" : {
-          "structurizr.dsl.identifier" : "authdb"
-        },
-        "name" : "Auth Service Database",
-        "group" : "Authentication Service",
-        "documentation" : { }
-      }, {
-        "id" : "5",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "webapplication"
-        },
-        "name" : "Web Application",
-        "relationships" : [ {
-          "id" : "21",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "2d05a1b4-5b02-4df9-b60f-0bf5725ba955"
-          },
-          "sourceId" : "5",
-          "destinationId" : "6",
-          "description" : "Authenticate user"
-        }, {
           "id" : "22",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "8232445c-3a21-4ed1-85a4-d34e8a7bcd29"
-          },
-          "sourceId" : "5",
-          "destinationId" : "10",
-          "description" : "Create mails"
-        } ],
-        "documentation" : { }
-      }, {
-        "id" : "6",
-        "tags" : "Element,Container,AuthService,Service API",
-        "properties" : {
-          "structurizr.dsl.identifier" : "authapi"
-        },
-        "name" : "Auth Service API",
-        "relationships" : [ {
-          "id" : "8",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "75b6c69e-8801-44d6-8e95-97226fed8f62"
+            "structurizr.dsl.identifier" : "f8520f0b-23ae-4e55-b30d-114ab3a78677"
           },
           "sourceId" : "6",
-          "destinationId" : "7",
-          "description" : "Checks if credentials match"
-        } ],
-        "group" : "Authentication Service",
-        "documentation" : { }
-      }, {
-        "id" : "10",
-        "tags" : "Element,Container,EmailCompositionService,Service API",
-        "properties" : {
-          "structurizr.dsl.identifier" : "mailcompositionapi"
-        },
-        "name" : "Email Composition API",
-        "relationships" : [ {
-          "id" : "13",
+          "destinationId" : "12",
+          "description" : "Recipient notified"
+        }, {
+          "id" : "26",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "ec07e634-532e-44ea-96b2-f21ad01e530c"
+            "structurizr.dsl.identifier" : "eeb2d493-2f0f-4a9d-87e0-a6e834f2ed18"
           },
-          "sourceId" : "10",
+          "sourceId" : "6",
           "destinationId" : "3",
-          "description" : "Store mail metadata and content"
+          "description" : "Log Email sent event"
         }, {
-          "id" : "15",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "b7c0e308-838d-4b5a-becf-9340848def31"
-          },
-          "sourceId" : "10",
-          "destinationId" : "9",
-          "description" : "Notify recipient"
-        }, {
-          "id" : "12",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "9fe2cc7b-220b-46b6-9b9a-da2903b288c3"
-          },
-          "sourceId" : "10",
-          "destinationId" : "11",
-          "description" : "Stores metadata of mails"
+          "id" : "23",
+          "sourceId" : "6",
+          "destinationId" : "7",
+          "description" : "Recipient notified",
+          "linkedRelationshipId" : "22"
         } ],
-        "group" : "Email Composition Service",
+        "group" : "Notification Service",
         "documentation" : { }
       } ],
       "documentation" : { }
     }, {
-      "id" : "23",
-      "tags" : "Element,Software System",
-      "properties" : {
-        "structurizr.dsl.identifier" : "s"
-      },
-      "name" : "Software System",
-      "location" : "Unspecified",
-      "containers" : [ {
-        "id" : "25",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "database"
-        },
-        "name" : "Database",
-        "technology" : "RDBS",
-        "documentation" : { }
-      }, {
-        "id" : "24",
-        "tags" : "Element,Container",
-        "properties" : {
-          "structurizr.dsl.identifier" : "webapp"
-        },
-        "name" : "Web Application",
-        "technology" : "Spring?",
-        "documentation" : { }
-      } ],
-      "documentation" : { }
-    }, {
-      "id" : "2",
+      "id" : "3",
       "tags" : "Element,Software System,Service API",
       "properties" : {
         "structurizr.dsl.identifier" : "logging"
@@ -225,119 +157,236 @@
       "location" : "Unspecified",
       "documentation" : { }
     }, {
-      "id" : "3",
-      "tags" : "Element,Software System,Database",
+      "id" : "7",
+      "tags" : "Element,Software System,BackendSystem",
       "properties" : {
-        "structurizr.dsl.identifier" : "storage"
+        "structurizr.dsl.identifier" : "backend"
       },
-      "name" : "Storage System",
-      "description" : "Stores encrypted mail content",
+      "name" : "Backend System",
+      "description" : "Contains logic how self-destructing mails should be created and dispatched to the recipient.",
+      "relationships" : [ {
+        "id" : "33",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "eb80580a-1130-4a2a-8d6b-f95d28e4be52"
+        },
+        "sourceId" : "7",
+        "destinationId" : "3",
+        "description" : "Create events"
+      }, {
+        "id" : "21",
+        "sourceId" : "7",
+        "destinationId" : "5",
+        "description" : "Notify recipient",
+        "linkedRelationshipId" : "18"
+      }, {
+        "id" : "20",
+        "sourceId" : "7",
+        "destinationId" : "6",
+        "description" : "Notify recipient",
+        "linkedRelationshipId" : "18"
+      }, {
+        "id" : "17",
+        "sourceId" : "7",
+        "destinationId" : "4",
+        "description" : "Store mail metadata and content",
+        "linkedRelationshipId" : "16"
+      } ],
       "group" : "Self-Destructing Email Service",
       "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "10",
+        "tags" : "Element,Container,AuthService,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "authdb"
+        },
+        "name" : "Auth Service Database",
+        "group" : "Authentication Service",
+        "documentation" : { }
+      }, {
+        "id" : "9",
+        "tags" : "Element,Container,AuthService,Service API",
+        "properties" : {
+          "structurizr.dsl.identifier" : "authapi"
+        },
+        "name" : "Auth Service API",
+        "relationships" : [ {
+          "id" : "11",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3597b8de-8ab8-4c3d-9a4b-fc96742c71a6"
+          },
+          "sourceId" : "9",
+          "destinationId" : "10",
+          "description" : "Checks if credentials match"
+        } ],
+        "group" : "Authentication Service",
+        "documentation" : { }
+      }, {
+        "id" : "12",
+        "tags" : "Element,Container,EmailCompositionService,Service API",
+        "properties" : {
+          "structurizr.dsl.identifier" : "mailcompositionapi"
+        },
+        "name" : "Email Composition API",
+        "relationships" : [ {
+          "id" : "14",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d351a083-a871-4b64-8baf-a198e1bf81e4"
+          },
+          "sourceId" : "12",
+          "destinationId" : "13",
+          "description" : "Stores metadata of mails"
+        }, {
+          "id" : "18",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c805490f-06af-40a0-af35-6e2db3912a26"
+          },
+          "sourceId" : "12",
+          "destinationId" : "6",
+          "description" : "Notify recipient"
+        }, {
+          "id" : "16",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d2ef70b4-798f-47ea-8281-0e3b1c995a7c"
+          },
+          "sourceId" : "12",
+          "destinationId" : "4",
+          "description" : "Store mail metadata and content"
+        }, {
+          "id" : "19",
+          "sourceId" : "12",
+          "destinationId" : "5",
+          "description" : "Notify recipient",
+          "linkedRelationshipId" : "18"
+        } ],
+        "group" : "Email Composition Service",
+        "documentation" : { }
+      }, {
+        "id" : "13",
+        "tags" : "Element,Container,Emailcompositionservice,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "maildb"
+        },
+        "name" : "Email Composition Database",
+        "group" : "Email Composition Service",
+        "documentation" : { }
+      }, {
+        "id" : "8",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "webapplication"
+        },
+        "name" : "Web Application",
+        "relationships" : [ {
+          "id" : "30",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c3cc4f69-3d43-4479-bb43-dbb624ec421a"
+          },
+          "sourceId" : "8",
+          "destinationId" : "9",
+          "description" : "Authenticate user"
+        }, {
+          "id" : "31",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "9384a12a-253a-433c-88ab-5dfe1368c338"
+          },
+          "sourceId" : "8",
+          "destinationId" : "12",
+          "description" : "Create mails"
+        }, {
+          "id" : "36",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e77ed598-6324-489e-b7d6-9b55bf0e62e5"
+          },
+          "sourceId" : "8",
+          "destinationId" : "15",
+          "description" : "View email"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "15",
+        "tags" : "Element,Container,ViewEmailService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "viewemailfrontend"
+        },
+        "name" : "Email View Frontend",
+        "relationships" : [ {
+          "id" : "37",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e711a3f6-ae04-47e8-a428-7ff85d328765"
+          },
+          "sourceId" : "15",
+          "destinationId" : "13"
+        }, {
+          "id" : "38",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c79b9b44-e7cd-42cb-ac27-541c79d14704"
+          },
+          "sourceId" : "15",
+          "destinationId" : "4"
+        } ],
+        "group" : "View Email Service",
+        "documentation" : { }
+      } ],
       "documentation" : { }
     } ],
     "deploymentNodes" : [ {
-      "id" : "26",
+      "id" : "39",
       "tags" : "Element,Deployment Node,Amazon Web Services - Cloud",
       "properties" : {
-        "structurizr.dsl.identifier" : "64f57359-c25b-46dd-91d0-298c5ae47a74"
+        "structurizr.dsl.identifier" : "00e231a4-2668-4a1a-bae0-8646c5ab46de"
       },
       "name" : "Amazon Web Services",
       "environment" : "Live",
       "instances" : "1",
       "children" : [ {
-        "id" : "27",
+        "id" : "40",
         "tags" : "Element,Deployment Node,Amazon Web Services - Region",
         "properties" : {
-          "structurizr.dsl.identifier" : "068f1cac-f41b-4eb6-8838-1818502ecfee"
+          "structurizr.dsl.identifier" : "552a95d9-8035-43ec-b2e7-64fb364eb2cd"
         },
         "name" : "eu-central-1",
         "environment" : "Live",
         "instances" : "1",
         "children" : [ {
-          "id" : "58",
+          "id" : "41",
           "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Organizational Unit",
           "properties" : {
-            "structurizr.dsl.identifier" : "ce76aa65-a938-4270-9431-30a6982b1bfe"
-          },
-          "name" : "OU-Security",
-          "environment" : "Live",
-          "instances" : "1",
-          "children" : [ {
-            "id" : "62",
-            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
-            "properties" : {
-              "structurizr.dsl.identifier" : "c2acfb5d-8425-48f8-8845-a07e6f1e82b9"
-            },
-            "name" : "acc-security-monitoring",
-            "environment" : "Live",
-            "instances" : "1",
-            "infrastructureNodes" : [ {
-              "id" : "63",
-              "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch Alarm",
-              "properties" : {
-                "structurizr.dsl.identifier" : "83c1b046-46a1-445a-ab45-e2255abb69e8"
-              },
-              "name" : "CloudWatch",
-              "environment" : "Live"
-            } ]
-          }, {
-            "id" : "59",
-            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
-            "properties" : {
-              "structurizr.dsl.identifier" : "9be07a4d-ff79-4fa3-a6b2-b7007136b095"
-            },
-            "name" : "acc-security-logging",
-            "environment" : "Live",
-            "instances" : "1",
-            "infrastructureNodes" : [ {
-              "id" : "60",
-              "tags" : "Element,Infrastructure Node,Amazon Web Services - Simple Storage Service",
-              "properties" : {
-                "structurizr.dsl.identifier" : "s3_logging"
-              },
-              "name" : "S3 Bucket",
-              "environment" : "Live"
-            }, {
-              "id" : "61",
-              "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch Logs",
-              "properties" : {
-                "structurizr.dsl.identifier" : "341e9b53-8dcd-4127-888e-c0c8d3ecb2cb"
-              },
-              "name" : "CloudWatch Logs",
-              "environment" : "Live"
-            } ]
-          } ]
-        }, {
-          "id" : "28",
-          "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Organizational Unit",
-          "properties" : {
-            "structurizr.dsl.identifier" : "dcee308e-1f8a-46cb-82d1-ff7aba337ab4"
+            "structurizr.dsl.identifier" : "31d6cdc6-4c11-47eb-89bb-ec03a10dc6de"
           },
           "name" : "OU-DevOps",
           "environment" : "Live",
           "instances" : "1",
           "children" : [ {
-            "id" : "29",
+            "id" : "42",
             "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
             "properties" : {
-              "structurizr.dsl.identifier" : "a7185258-0f8e-4dd4-80a7-5ecc2d7120cb"
+              "structurizr.dsl.identifier" : "fbc68945-5607-44e5-9524-837ef6dffd8e"
             },
             "name" : "acc-devops-prod",
             "environment" : "Live",
             "instances" : "1",
             "infrastructureNodes" : [ {
-              "id" : "30",
+              "id" : "43",
               "tags" : "Element,Infrastructure Node,Amazon Web Services - EC2",
               "properties" : {
-                "structurizr.dsl.identifier" : "de5bb125-87e4-4a62-9ce1-ced90e250ef0"
+                "structurizr.dsl.identifier" : "cabbf5be-df90-46ce-9dd7-94508b23399b"
               },
               "name" : "Gitlab Server",
               "environment" : "Live"
             } ]
           } ]
         }, {
-          "id" : "31",
+          "id" : "44",
           "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Organizational Unit",
           "properties" : {
             "structurizr.dsl.identifier" : "ou_tech"
@@ -346,35 +395,72 @@
           "environment" : "Live",
           "instances" : "1",
           "children" : [ {
-            "id" : "32",
+            "id" : "45",
             "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
             "properties" : {
-              "structurizr.dsl.identifier" : "20ebb02f-4005-4c7b-a697-db26db006cd1"
+              "structurizr.dsl.identifier" : "b1e6f818-b3ef-4b8a-b8f1-bf0923ac0bce"
             },
             "name" : "acc-tech-prod",
             "environment" : "Live",
             "instances" : "1",
             "children" : [ {
-              "id" : "49",
+              "id" : "46",
               "tags" : "Element,Deployment Node,=,Amazon Web Services - VPC Virtual private cloud VPC",
               "properties" : {
-                "structurizr.dsl.identifier" : "7d363131-342a-4301-8186-25731edbf848"
+                "structurizr.dsl.identifier" : "eks_vpc"
+              },
+              "name" : "EKS VPC",
+              "environment" : "Live",
+              "instances" : "1",
+              "infrastructureNodes" : [ {
+                "id" : "47",
+                "tags" : "Element,Infrastructure Node,=,Amazon Web Services - EKS Cloud",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "eks_control_plane"
+                },
+                "name" : "EKS Control Plane",
+                "relationships" : [ {
+                  "id" : "69",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "9bab0d18-32e4-45b8-b11c-abe682ab7bbb"
+                  },
+                  "sourceId" : "47",
+                  "destinationId" : "51",
+                  "description" : "Controls"
+                }, {
+                  "id" : "70",
+                  "tags" : "Relationship",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "b8c390a8-4c5a-452a-b944-e857a9f0b5a4"
+                  },
+                  "sourceId" : "47",
+                  "destinationId" : "61",
+                  "description" : "Controls"
+                } ],
+                "environment" : "Live"
+              } ]
+            }, {
+              "id" : "62",
+              "tags" : "Element,Deployment Node,=,Amazon Web Services - VPC Virtual private cloud VPC",
+              "properties" : {
+                "structurizr.dsl.identifier" : "2003369a-421d-498f-a9c0-34f05bcb7702"
               },
               "name" : "DB VPC",
               "group" : "Databases",
               "environment" : "Live",
               "instances" : "1",
               "children" : [ {
-                "id" : "53",
+                "id" : "66",
                 "tags" : "Element,Deployment Node,Amazon Web Services - DynamoDB",
                 "properties" : {
-                  "structurizr.dsl.identifier" : "0049619d-9576-4e08-9738-27f283034320"
+                  "structurizr.dsl.identifier" : "95d479ea-a695-4973-8e2e-51ab3e525bb1"
                 },
                 "name" : "DynamoDB (Mails)",
                 "environment" : "Live",
                 "instances" : "1",
                 "containerInstances" : [ {
-                  "id" : "54",
+                  "id" : "67",
                   "tags" : "Container Instance",
                   "properties" : {
                     "structurizr.dsl.identifier" : "livemaildb"
@@ -382,19 +468,19 @@
                   "environment" : "Live",
                   "deploymentGroups" : [ "Default" ],
                   "instanceId" : 1,
-                  "containerId" : "11"
+                  "containerId" : "13"
                 } ]
               }, {
-                "id" : "50",
+                "id" : "63",
                 "tags" : "Element,Deployment Node,Amazon Web Services - DynamoDB",
                 "properties" : {
-                  "structurizr.dsl.identifier" : "0e491f00-9b2b-422e-b49e-974d248d3b25"
+                  "structurizr.dsl.identifier" : "d88ed8f7-231c-4e21-b1db-c2cee6b0c557"
                 },
                 "name" : "DynamoDB (Auth)",
                 "environment" : "Live",
                 "instances" : "1",
                 "containerInstances" : [ {
-                  "id" : "51",
+                  "id" : "64",
                   "tags" : "Container Instance",
                   "properties" : {
                     "structurizr.dsl.identifier" : "liveuserdb"
@@ -402,11 +488,11 @@
                   "environment" : "Live",
                   "deploymentGroups" : [ "Default" ],
                   "instanceId" : 1,
-                  "containerId" : "7"
+                  "containerId" : "10"
                 } ]
               } ]
             }, {
-              "id" : "35",
+              "id" : "48",
               "tags" : "Element,Deployment Node,=,Amazon Web Services - VPC Virtual private cloud VPC",
               "properties" : {
                 "structurizr.dsl.identifier" : "workload_vpc"
@@ -415,25 +501,25 @@
               "environment" : "Live",
               "instances" : "1",
               "children" : [ {
-                "id" : "36",
+                "id" : "49",
                 "tags" : "Element,Deployment Node,=,Amazon Web Services - Region",
                 "properties" : {
-                  "structurizr.dsl.identifier" : "e8ce3eaf-9e74-4e94-83a4-d59aa0d277e1"
+                  "structurizr.dsl.identifier" : "46df59e4-3e50-4d72-b84d-dc739702f1e6"
                 },
                 "name" : "Availability Zone 1",
                 "environment" : "Live",
                 "instances" : "1",
                 "children" : [ {
-                  "id" : "37",
+                  "id" : "50",
                   "tags" : "Element,Deployment Node,=,Amazon Web Services - VPC VPN Gateway",
                   "properties" : {
-                    "structurizr.dsl.identifier" : "735cdb6f-9415-43cd-88b7-5f034ac50fb8"
+                    "structurizr.dsl.identifier" : "1f4d3e3e-0049-422c-a8cd-875f3f80a8ba"
                   },
                   "name" : "Subnet 1",
                   "environment" : "Live",
                   "instances" : "1",
                   "children" : [ {
-                    "id" : "38",
+                    "id" : "51",
                     "tags" : "Element,Deployment Node,=,Amazon Web Services - EKS Cloud",
                     "properties" : {
                       "structurizr.dsl.identifier" : "eks_node_group1"
@@ -442,7 +528,7 @@
                     "environment" : "Live",
                     "instances" : "1",
                     "children" : [ {
-                      "id" : "39",
+                      "id" : "52",
                       "tags" : "Element,Deployment Node,=,Kubernetes - pod",
                       "properties" : {
                         "structurizr.dsl.identifier" : "eks_node_group1_pod1"
@@ -451,25 +537,25 @@
                       "environment" : "Live",
                       "instances" : "1",
                       "containerInstances" : [ {
-                        "id" : "40",
+                        "id" : "53",
                         "tags" : "Container Instance",
                         "properties" : {
                           "structurizr.dsl.identifier" : "pod1_authapi"
                         },
                         "relationships" : [ {
-                          "id" : "52",
-                          "sourceId" : "40",
-                          "destinationId" : "51",
+                          "id" : "65",
+                          "sourceId" : "53",
+                          "destinationId" : "64",
                           "description" : "Checks if credentials match",
-                          "linkedRelationshipId" : "8"
+                          "linkedRelationshipId" : "11"
                         } ],
                         "environment" : "Live",
                         "deploymentGroups" : [ "Default" ],
                         "instanceId" : 1,
-                        "containerId" : "6"
+                        "containerId" : "9"
                       } ]
                     }, {
-                      "id" : "41",
+                      "id" : "54",
                       "tags" : "Element,Deployment Node,=,Kubernetes - pod",
                       "properties" : {
                         "structurizr.dsl.identifier" : "eks_node_group1_pod2"
@@ -478,69 +564,69 @@
                       "environment" : "Live",
                       "instances" : "1",
                       "containerInstances" : [ {
-                        "id" : "43",
-                        "tags" : "Container Instance",
-                        "properties" : {
-                          "structurizr.dsl.identifier" : "pod2_notificationapi"
-                        },
-                        "relationships" : [ {
-                          "id" : "44",
-                          "sourceId" : "43",
-                          "destinationId" : "42",
-                          "description" : "Recipient notified",
-                          "linkedRelationshipId" : "16"
-                        } ],
-                        "environment" : "Live",
-                        "deploymentGroups" : [ "Default" ],
-                        "instanceId" : 1,
-                        "containerId" : "9"
-                      }, {
-                        "id" : "42",
+                        "id" : "55",
                         "tags" : "Container Instance",
                         "properties" : {
                           "structurizr.dsl.identifier" : "pod2_mailcompositionapi"
                         },
                         "relationships" : [ {
-                          "id" : "55",
-                          "sourceId" : "42",
-                          "destinationId" : "54",
-                          "description" : "Stores metadata of mails",
-                          "linkedRelationshipId" : "12"
-                        }, {
-                          "id" : "45",
-                          "sourceId" : "42",
-                          "destinationId" : "43",
+                          "id" : "58",
+                          "sourceId" : "55",
+                          "destinationId" : "56",
                           "description" : "Notify recipient",
-                          "linkedRelationshipId" : "15"
+                          "linkedRelationshipId" : "18"
+                        }, {
+                          "id" : "68",
+                          "sourceId" : "55",
+                          "destinationId" : "67",
+                          "description" : "Stores metadata of mails",
+                          "linkedRelationshipId" : "14"
                         } ],
                         "environment" : "Live",
                         "deploymentGroups" : [ "Default" ],
                         "instanceId" : 1,
-                        "containerId" : "10"
+                        "containerId" : "12"
+                      }, {
+                        "id" : "56",
+                        "tags" : "Container Instance",
+                        "properties" : {
+                          "structurizr.dsl.identifier" : "pod2_notificationapi"
+                        },
+                        "relationships" : [ {
+                          "id" : "57",
+                          "sourceId" : "56",
+                          "destinationId" : "55",
+                          "description" : "Recipient notified",
+                          "linkedRelationshipId" : "22"
+                        } ],
+                        "environment" : "Live",
+                        "deploymentGroups" : [ "Default" ],
+                        "instanceId" : 1,
+                        "containerId" : "6"
                       } ]
                     } ]
                   } ]
                 } ]
               }, {
-                "id" : "46",
+                "id" : "59",
                 "tags" : "Element,Deployment Node,=,Amazon Web Services - Region",
                 "properties" : {
-                  "structurizr.dsl.identifier" : "d68cbb56-4218-4679-a719-9ea274b5dd04"
+                  "structurizr.dsl.identifier" : "5886d1cc-2c93-4783-970b-671be0a9c597"
                 },
                 "name" : "Availability Zone 2",
                 "environment" : "Live",
                 "instances" : "1",
                 "children" : [ {
-                  "id" : "47",
+                  "id" : "60",
                   "tags" : "Element,Deployment Node,=,Amazon Web Services - VPC VPN Gateway",
                   "properties" : {
-                    "structurizr.dsl.identifier" : "1f4b5224-40fd-4988-bb28-3c59b43d87ac"
+                    "structurizr.dsl.identifier" : "3846b321-46cb-4790-bdac-3f95efb8b160"
                   },
                   "name" : "Subnet 1",
                   "environment" : "Live",
                   "instances" : "1",
                   "infrastructureNodes" : [ {
-                    "id" : "48",
+                    "id" : "61",
                     "tags" : "Element,Infrastructure Node,=,Amazon Web Services - EKS Cloud",
                     "properties" : {
                       "structurizr.dsl.identifier" : "eks_node_group2"
@@ -550,43 +636,60 @@
                   } ]
                 } ]
               } ]
-            }, {
-              "id" : "33",
-              "tags" : "Element,Deployment Node,=,Amazon Web Services - VPC Virtual private cloud VPC",
+            } ]
+          } ]
+        }, {
+          "id" : "71",
+          "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Organizational Unit",
+          "properties" : {
+            "structurizr.dsl.identifier" : "1d8f96a0-98e6-4f7f-8588-5619a3f2e7a2"
+          },
+          "name" : "OU-Security",
+          "environment" : "Live",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "72",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
+            "properties" : {
+              "structurizr.dsl.identifier" : "dc8b4ed4-2bdc-415d-aaa6-81d43dd6ee86"
+            },
+            "name" : "acc-security-logging",
+            "environment" : "Live",
+            "instances" : "1",
+            "infrastructureNodes" : [ {
+              "id" : "74",
+              "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch Logs",
               "properties" : {
-                "structurizr.dsl.identifier" : "eks_vpc"
+                "structurizr.dsl.identifier" : "aa9d2ac6-c6ea-4f62-a2c3-54b8f13df049"
               },
-              "name" : "EKS VPC",
-              "environment" : "Live",
-              "instances" : "1",
-              "infrastructureNodes" : [ {
-                "id" : "34",
-                "tags" : "Element,Infrastructure Node,=,Amazon Web Services - EKS Cloud",
-                "properties" : {
-                  "structurizr.dsl.identifier" : "eks_control_plane"
-                },
-                "name" : "EKS Control Plane",
-                "relationships" : [ {
-                  "id" : "56",
-                  "tags" : "Relationship",
-                  "properties" : {
-                    "structurizr.dsl.identifier" : "c269a5ca-76d5-4d50-98a0-c511510774dd"
-                  },
-                  "sourceId" : "34",
-                  "destinationId" : "38",
-                  "description" : "Controls"
-                }, {
-                  "id" : "57",
-                  "tags" : "Relationship",
-                  "properties" : {
-                    "structurizr.dsl.identifier" : "348c698e-d2eb-44de-87f8-77e085a31c10"
-                  },
-                  "sourceId" : "34",
-                  "destinationId" : "48",
-                  "description" : "Controls"
-                } ],
-                "environment" : "Live"
-              } ]
+              "name" : "CloudWatch Logs",
+              "environment" : "Live"
+            }, {
+              "id" : "73",
+              "tags" : "Element,Infrastructure Node,Amazon Web Services - Simple Storage Service",
+              "properties" : {
+                "structurizr.dsl.identifier" : "s3_logging"
+              },
+              "name" : "S3 Bucket",
+              "environment" : "Live"
+            } ]
+          }, {
+            "id" : "75",
+            "tags" : "Element,Deployment Node,Amazon Web Services - AWS Organizations Account",
+            "properties" : {
+              "structurizr.dsl.identifier" : "aee78d73-d4d3-4c48-8a77-97b9be9df227"
+            },
+            "name" : "acc-security-monitoring",
+            "environment" : "Live",
+            "instances" : "1",
+            "infrastructureNodes" : [ {
+              "id" : "76",
+              "tags" : "Element,Infrastructure Node,Amazon Web Services - CloudWatch Alarm",
+              "properties" : {
+                "structurizr.dsl.identifier" : "660c01e2-0779-4a6b-80bd-27736e33e80b"
+              },
+              "name" : "CloudWatch",
+              "environment" : "Live"
             } ]
           } ]
         } ]
@@ -595,31 +698,88 @@
   },
   "documentation" : { },
   "views" : {
-    "systemContextViews" : [ {
-      "key" : "SystemContext",
+    "systemLandscapeViews" : [ {
+      "key" : "SystemLandscape",
       "order" : 1,
-      "description" : "The system context diagram for the self-destructing mail service",
-      "softwareSystemId" : "23",
-      "paperSize" : "A5_Landscape",
+      "paperSize" : "A4_Landscape",
       "dimensions" : {
-        "width" : 2480,
-        "height" : 1748
+        "width" : 2833,
+        "height" : 2308
       },
       "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "29",
+        "vertices" : [ {
+          "x" : 637,
+          "y" : 679
+        } ]
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "27",
+        "vertices" : [ {
+          "x" : 1805,
+          "y" : 825
+        } ]
+      }, {
+        "id" : "25",
+        "vertices" : [ {
+          "x" : 1315,
+          "y" : 776
+        } ]
+      }, {
+        "id" : "35",
+        "vertices" : [ {
+          "x" : 2570,
+          "y" : 1175
+        }, {
+          "x" : 2050,
+          "y" : 1185
+        } ]
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "21",
+        "vertices" : [ {
+          "x" : 1596,
+          "y" : 881
+        } ]
+      }, {
+        "id" : "32"
+      } ],
       "elements" : [ {
-        "id" : "23",
-        "x" : 1015,
-        "y" : 724
+        "id" : "1",
+        "x" : 208,
+        "y" : 279
+      }, {
+        "id" : "2",
+        "x" : 2390,
+        "y" : 245
+      }, {
+        "id" : "3",
+        "x" : 1567,
+        "y" : 1679
+      }, {
+        "id" : "4",
+        "x" : 817,
+        "y" : 1679
+      }, {
+        "id" : "5",
+        "x" : 1225,
+        "y" : 300
+      }, {
+        "id" : "7",
+        "x" : 1100,
+        "y" : 1029
       } ]
     } ],
     "containerViews" : [ {
-      "key" : "Containers_MailCompositionService",
-      "order" : 5,
-      "softwareSystemId" : "4",
-      "paperSize" : "A4_Landscape",
+      "key" : "Containers_NotificationService",
+      "order" : 4,
+      "softwareSystemId" : "7",
       "dimensions" : {
-        "width" : 2633,
-        "height" : 2262
+        "width" : 1653,
+        "height" : 1744
       },
       "automaticLayout" : {
         "implementation" : "Graphviz",
@@ -631,49 +791,114 @@
       },
       "externalSoftwareSystemBoundariesVisible" : true,
       "relationships" : [ {
-        "id" : "16"
-      }, {
-        "id" : "15"
-      }, {
-        "id" : "13",
+        "id" : "18",
         "vertices" : [ {
-          "x" : 1825,
-          "y" : 1425
+          "x" : 1131,
+          "y" : 740
         } ]
       }, {
-        "id" : "12"
+        "id" : "26"
       }, {
-        "id" : "22"
+        "id" : "22",
+        "vertices" : [ {
+          "x" : 863,
+          "y" : 876
+        } ]
       } ],
       "elements" : [ {
-        "id" : "11",
-        "x" : 433,
-        "y" : 1529
+        "id" : "12",
+        "x" : 962,
+        "y" : 989
       }, {
         "id" : "3",
-        "x" : 1958,
-        "y" : 1529
+        "x" : 199,
+        "y" : 989
+      }, {
+        "id" : "6",
+        "x" : 583,
+        "y" : 239
+      } ]
+    }, {
+      "key" : "Containers_MailCompositionService",
+      "order" : 5,
+      "softwareSystemId" : "7",
+      "dimensions" : {
+        "width" : 3165,
+        "height" : 2085
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "16",
+        "vertices" : [ {
+          "x" : 822,
+          "y" : 1223
+        }, {
+          "x" : 2364,
+          "y" : 1419
+        } ]
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "24",
+        "vertices" : [ {
+          "x" : 972,
+          "y" : 1223
+        } ]
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "19",
+        "vertices" : [ {
+          "x" : 672,
+          "y" : 1223
+        } ]
+      } ],
+      "elements" : [ {
+        "id" : "12",
+        "x" : 239,
+        "y" : 819
+      }, {
+        "id" : "13",
+        "x" : 239,
+        "y" : 1419
+      }, {
+        "id" : "15",
+        "x" : 1001,
+        "y" : 819
+      }, {
+        "id" : "4",
+        "x" : 2514,
+        "y" : 1419
       }, {
         "id" : "5",
-        "x" : 433,
-        "y" : 329
+        "x" : 1764,
+        "y" : 1419
       }, {
-        "id" : "9",
-        "x" : 1195,
-        "y" : 1529
-      }, {
-        "id" : "10",
-        "x" : 433,
-        "y" : 929
+        "id" : "8",
+        "x" : 618,
+        "y" : 219
       } ]
     }, {
       "key" : "Containers_AuthenticationService",
       "order" : 3,
-      "softwareSystemId" : "4",
-      "paperSize" : "A5_Portrait",
+      "softwareSystemId" : "7",
       "dimensions" : {
-        "width" : 1316,
-        "height" : 2262
+        "width" : 930,
+        "height" : 2085
       },
       "automaticLayout" : {
         "implementation" : "Graphviz",
@@ -685,145 +910,126 @@
       },
       "externalSoftwareSystemBoundariesVisible" : true,
       "relationships" : [ {
-        "id" : "8"
+        "id" : "11"
       }, {
-        "id" : "21"
+        "id" : "30"
       } ],
       "elements" : [ {
-        "id" : "5",
-        "x" : 433,
-        "y" : 329
-      }, {
-        "id" : "6",
-        "x" : 433,
-        "y" : 929
-      }, {
-        "id" : "7",
-        "x" : 433,
-        "y" : 1529
-      } ]
-    }, {
-      "key" : "Containers_NotificationService",
-      "order" : 4,
-      "softwareSystemId" : "4",
-      "paperSize" : "A5_Portrait",
-      "dimensions" : {
-        "width" : 1316,
-        "height" : 2158
-      },
-      "automaticLayout" : {
-        "implementation" : "Graphviz",
-        "rankDirection" : "TopBottom",
-        "rankSeparation" : 300,
-        "nodeSeparation" : 300,
-        "edgeSeparation" : 0,
-        "vertices" : false
-      },
-      "externalSoftwareSystemBoundariesVisible" : true,
-      "relationships" : [ {
-        "id" : "17"
-      }, {
-        "id" : "16"
-      }, {
-        "id" : "15"
-      } ],
-      "elements" : [ {
-        "id" : "2",
-        "x" : 433,
-        "y" : 1633
+        "id" : "8",
+        "x" : 239,
+        "y" : 219
       }, {
         "id" : "9",
-        "x" : 433,
-        "y" : 1033
+        "x" : 239,
+        "y" : 819
       }, {
         "id" : "10",
-        "x" : 433,
-        "y" : 433
+        "x" : 239,
+        "y" : 1419
       } ]
     }, {
       "key" : "Containers_All",
       "order" : 2,
-      "softwareSystemId" : "4",
+      "softwareSystemId" : "7",
       "paperSize" : "A3_Landscape",
       "dimensions" : {
         "width" : 3395,
-        "height" : 3216
-      },
-      "automaticLayout" : {
-        "implementation" : "Graphviz",
-        "rankDirection" : "TopBottom",
-        "rankSeparation" : 300,
-        "nodeSeparation" : 300,
-        "edgeSeparation" : 0,
-        "vertices" : false
+        "height" : 2925
       },
       "externalSoftwareSystemBoundariesVisible" : true,
       "relationships" : [ {
-        "id" : "17"
+        "id" : "32"
       }, {
-        "id" : "16"
+        "id" : "31"
       }, {
-        "id" : "15"
-      }, {
-        "id" : "13",
+        "id" : "30",
         "vertices" : [ {
-          "x" : 2587,
-          "y" : 2004
+          "x" : 1016,
+          "y" : 1454
         } ]
       }, {
-        "id" : "12"
+        "id" : "28"
       }, {
-        "id" : "22"
+        "id" : "16",
+        "vertices" : [ {
+          "x" : 1905,
+          "y" : 2365
+        } ]
       }, {
-        "id" : "8"
+        "id" : "37"
       }, {
-        "id" : "21"
+        "id" : "36"
       }, {
-        "id" : "19"
+        "id" : "14"
+      }, {
+        "id" : "24",
+        "vertices" : [ {
+          "x" : 1929,
+          "y" : 1454
+        } ]
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "11"
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "19",
+        "vertices" : [ {
+          "x" : 1850,
+          "y" : 1145
+        }, {
+          "x" : 2230,
+          "y" : 960
+        } ]
       } ],
       "elements" : [ {
-        "id" : "11",
-        "x" : 1195,
-        "y" : 2108
-      }, {
         "id" : "1",
-        "x" : 837,
-        "y" : 208
+        "x" : 340,
+        "y" : 140
+      }, {
+        "id" : "12",
+        "x" : 1195,
+        "y" : 1558
+      }, {
+        "id" : "13",
+        "x" : 1195,
+        "y" : 2208
       }, {
         "id" : "2",
-        "x" : 1958,
-        "y" : 2708
+        "x" : 2675,
+        "y" : 170
       }, {
-        "id" : "3",
+        "id" : "15",
+        "x" : 1930,
+        "y" : 1570
+      }, {
+        "id" : "4",
         "x" : 2720,
-        "y" : 2108
+        "y" : 2208
       }, {
         "id" : "5",
-        "x" : 812,
-        "y" : 908
+        "x" : 2565,
+        "y" : 785
       }, {
-        "id" : "6",
-        "x" : 433,
-        "y" : 1508
-      }, {
-        "id" : "7",
-        "x" : 433,
-        "y" : 2108
+        "id" : "8",
+        "x" : 1230,
+        "y" : 855
       }, {
         "id" : "9",
-        "x" : 1958,
-        "y" : 2108
+        "x" : 433,
+        "y" : 1558
       }, {
         "id" : "10",
-        "x" : 1195,
-        "y" : 1508
+        "x" : 433,
+        "y" : 2208
       } ]
     } ],
     "deploymentViews" : [ {
       "key" : "WorkloadDeployment",
       "order" : 6,
       "description" : "Deployment of the workload",
-      "softwareSystemId" : "4",
+      "softwareSystemId" : "7",
       "paperSize" : "A2_Landscape",
       "dimensions" : {
         "width" : 6458,
@@ -831,75 +1037,56 @@
       },
       "environment" : "Live",
       "relationships" : [ {
-        "id" : "52",
+        "id" : "70"
+      }, {
+        "id" : "65",
         "vertices" : [ {
           "x" : 4920,
           "y" : 2245
         } ]
       }, {
-        "id" : "55",
+        "id" : "69"
+      }, {
+        "id" : "68",
         "vertices" : [ {
           "x" : 2725,
           "y" : 2212
         } ]
-      }, {
-        "id" : "44",
-        "vertices" : [ {
-          "x" : 2516,
-          "y" : 2325
-        } ]
-      }, {
-        "id" : "45",
-        "vertices" : [ {
-          "x" : 2216,
-          "y" : 2325
-        } ]
-      }, {
-        "id" : "56",
-        "vertices" : [ {
-          "x" : 2220,
-          "y" : 945
-        }, {
-          "x" : 2440,
-          "y" : 1265
-        } ]
-      }, {
-        "id" : "57"
       } ],
       "elements" : [ {
-        "id" : "33",
+        "id" : "55",
+        "x" : 2141,
+        "y" : 1704
+      }, {
+        "id" : "66",
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "34",
-        "x" : 854,
-        "y" : 745
+        "id" : "44",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "67",
+        "x" : 4291,
+        "y" : 2558
+      }, {
+        "id" : "45",
+        "x" : 175,
+        "y" : 175
       }, {
         "id" : "46",
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "35",
-        "x" : 175,
-        "y" : 175
-      }, {
         "id" : "47",
-        "x" : 175,
-        "y" : 175
+        "x" : 955,
+        "y" : 770
       }, {
-        "id" : "36",
+        "id" : "59",
         "x" : 175,
         "y" : 175
       }, {
         "id" : "48",
-        "x" : 962,
-        "y" : 1704
-      }, {
-        "id" : "37",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "26",
         "x" : 175,
         "y" : 175
       }, {
@@ -907,55 +1094,51 @@
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "38",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "27",
-        "x" : 175,
-        "y" : 175
-      }, {
         "id" : "39",
         "x" : 175,
         "y" : 175
+      }, {
+        "id" : "60",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "61",
+        "x" : 962,
+        "y" : 1704
       }, {
         "id" : "50",
         "x" : 175,
         "y" : 175
       }, {
         "id" : "51",
-        "x" : 5054,
-        "y" : 2558
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "62",
+        "x" : 175,
+        "y" : 175
       }, {
         "id" : "40",
-        "x" : 2904,
-        "y" : 1704
+        "x" : 175,
+        "y" : 175
       }, {
-        "id" : "41",
+        "id" : "52",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "63",
         "x" : 175,
         "y" : 175
       }, {
         "id" : "53",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "42",
-        "x" : 2141,
+        "x" : 2904,
         "y" : 1704
       }, {
-        "id" : "31",
-        "x" : 175,
-        "y" : 175
+        "id" : "64",
+        "x" : 5054,
+        "y" : 2558
       }, {
         "id" : "54",
-        "x" : 4291,
-        "y" : 2558
-      }, {
-        "id" : "43",
-        "x" : 2141,
-        "y" : 2558
-      }, {
-        "id" : "32",
         "x" : 175,
         "y" : 175
       } ]
@@ -963,7 +1146,7 @@
       "key" : "LiveDeployment",
       "order" : 7,
       "description" : "An example live deployment for the self-destructing email service",
-      "softwareSystemId" : "4",
+      "softwareSystemId" : "7",
       "paperSize" : "A1_Landscape",
       "dimensions" : {
         "width" : 9904,
@@ -971,158 +1154,142 @@
       },
       "environment" : "Live",
       "relationships" : [ {
-        "id" : "52"
+        "id" : "70"
       }, {
-        "id" : "55",
+        "id" : "65"
+      }, {
+        "id" : "69"
+      }, {
+        "id" : "68",
         "vertices" : [ {
           "x" : 5200,
           "y" : 2316
         } ]
-      }, {
-        "id" : "44",
-        "vertices" : [ {
-          "x" : 4991,
-          "y" : 2429
-        } ]
-      }, {
-        "id" : "45",
-        "vertices" : [ {
-          "x" : 4691,
-          "y" : 2429
-        } ]
-      }, {
-        "id" : "56"
-      }, {
-        "id" : "57"
       } ],
       "elements" : [ {
-        "id" : "46",
-        "x" : 1925,
-        "y" : 1925
-      }, {
-        "id" : "47",
-        "x" : 1400,
-        "y" : 1400
-      }, {
-        "id" : "48",
-        "x" : 3437,
-        "y" : 1808
-      }, {
-        "id" : "26",
+        "id" : "66",
         "x" : 4725,
         "y" : 4725
       }, {
-        "id" : "49",
-        "x" : 3150,
-        "y" : 3150
-      }, {
-        "id" : "27",
+        "id" : "44",
         "x" : 4725,
         "y" : 4725
       }, {
-        "id" : "28",
-        "x" : 4200,
-        "y" : 4200
-      }, {
-        "id" : "29",
-        "x" : 4200,
-        "y" : 4200
-      }, {
-        "id" : "50",
-        "x" : 2975,
-        "y" : 2975
-      }, {
-        "id" : "51",
-        "x" : 7013,
-        "y" : 2955
-      }, {
-        "id" : "30",
-        "x" : 8812,
-        "y" : 745
-      }, {
-        "id" : "53",
-        "x" : 4725,
-        "y" : 4725
-      }, {
-        "id" : "31",
-        "x" : 4725,
-        "y" : 4725
-      }, {
-        "id" : "54",
+        "id" : "67",
         "x" : 6250,
         "y" : 2955
       }, {
-        "id" : "32",
+        "id" : "45",
         "x" : 4725,
         "y" : 4725
       }, {
-        "id" : "33",
+        "id" : "46",
         "x" : 2275,
         "y" : 2275
       }, {
-        "id" : "34",
+        "id" : "47",
         "x" : 4408,
         "y" : 745
       }, {
-        "id" : "35",
+        "id" : "48",
         "x" : 2625,
         "y" : 2625
       }, {
-        "id" : "58",
-        "x" : 4725,
-        "y" : 4725
-      }, {
-        "id" : "36",
+        "id" : "49",
         "x" : 2100,
         "y" : 2100
       }, {
-        "id" : "59",
+        "id" : "71",
         "x" : 4725,
         "y" : 4725
       }, {
-        "id" : "37",
+        "id" : "72",
+        "x" : 4725,
+        "y" : 4725
+      }, {
+        "id" : "50",
         "x" : 2100,
         "y" : 2100
       }, {
-        "id" : "38",
+        "id" : "73",
+        "x" : 2803,
+        "y" : 770
+      }, {
+        "id" : "51",
         "x" : 875,
         "y" : 875
       }, {
-        "id" : "39",
+        "id" : "74",
+        "x" : 2053,
+        "y" : 770
+      }, {
+        "id" : "52",
         "x" : 700,
         "y" : 700
       }, {
-        "id" : "60",
-        "x" : 2154,
-        "y" : 745
-      }, {
-        "id" : "61",
-        "x" : 1404,
-        "y" : 745
-      }, {
-        "id" : "62",
+        "id" : "75",
         "x" : 4725,
         "y" : 4725
       }, {
-        "id" : "40",
+        "id" : "53",
         "x" : 5379,
         "y" : 1808
       }, {
-        "id" : "63",
-        "x" : 641,
-        "y" : 745
+        "id" : "76",
+        "x" : 1290,
+        "y" : 770
       }, {
-        "id" : "41",
+        "id" : "54",
         "x" : 525,
         "y" : 525
       }, {
-        "id" : "42",
+        "id" : "55",
         "x" : 4616,
         "y" : 1808
       }, {
+        "id" : "59",
+        "x" : 1925,
+        "y" : 1925
+      }, {
+        "id" : "39",
+        "x" : 4725,
+        "y" : 4725
+      }, {
+        "id" : "60",
+        "x" : 1400,
+        "y" : 1400
+      }, {
+        "id" : "61",
+        "x" : 3437,
+        "y" : 1808
+      }, {
+        "id" : "62",
+        "x" : 3150,
+        "y" : 3150
+      }, {
+        "id" : "40",
+        "x" : 4725,
+        "y" : 4725
+      }, {
+        "id" : "41",
+        "x" : 4200,
+        "y" : 4200
+      }, {
+        "id" : "63",
+        "x" : 2975,
+        "y" : 2975
+      }, {
+        "id" : "42",
+        "x" : 4200,
+        "y" : 4200
+      }, {
+        "id" : "64",
+        "x" : 7013,
+        "y" : 2955
+      }, {
         "id" : "43",
-        "x" : 4616,
-        "y" : 2662
+        "x" : 1305,
+        "y" : 1370
       } ]
     } ],
     "configuration" : {
@@ -1134,17 +1301,30 @@
           "fontSize" : 22,
           "shape" : "Person"
         }, {
+          "tag" : "Sender",
+          "background" : "#8fb5fe",
+          "color" : "#ffffff",
+          "shape" : "Person"
+        }, {
+          "tag" : "Recipient",
+          "background" : "#e97451",
+          "color" : "#ffffff",
+          "shape" : "Person"
+        }, {
           "tag" : "Service API",
           "shape" : "Hexagon"
         }, {
           "tag" : "Database",
           "shape" : "Cylinder"
+        }, {
+          "tag" : "BackendSystem",
+          "background" : "#d3d3d3"
         } ]
       },
       "themes" : [ "https://static.structurizr.com/themes/amazon-web-services-2023.01.31/theme.json", "https://static.structurizr.com/themes/kubernetes-v0.3/theme.json" ],
       "terminology" : { },
       "metadataSymbols" : "SquareBrackets",
-      "lastSavedView" : "WorkloadDeployment"
+      "lastSavedView" : "Containers_All"
     }
   }
 }

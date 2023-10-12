@@ -3,10 +3,16 @@ workspace {
   // !identifiers hierarchical
 
   name "Self-Destructing Email Service"
-  description "The sofware architecture of the self-destructing email servic"
+  description "The sofware architecture of the self-destructing email service"
 
   model {
-    u = person "Customer"
+    sender = person "Sender" "Sender creates self-destructing email" {
+      tags "Sender"
+    }
+    recipient = person "Recipient" "Recipient receives self-destructing email" {
+      tags "Recipient"
+    }
+
     group "Self-Destructing Email Service" {
       // Logging keeps track of several events
       logging = softwaresystem "Logging System" "Logs several events related to mail generation" {
@@ -16,8 +22,21 @@ workspace {
         tags "Database"
       }
 
+      notification = softwaresystem "Notification System" "Sends notification to recipient to view email" {
+        tags "System"
+
+        // --- Notification Service
+        notificationService = group "Notification Service" {
+          notificationAPI = container "Notification API" {
+            tags "NotificationService" "Service API"
+          } 
+        }  
+      }
+
+
       // Backend system responsible for the business logic
-      backend = softwaresystem "Backend System" {
+      backend = softwaresystem "Backend System" "Contains logic how self-destructing mails should be created and dispatched to the recipient." {
+        tags "BackendSystem"
         webapplication = container "Web Application"
 
         // Services/
@@ -32,12 +51,6 @@ workspace {
           }
         } 
 
-        // --- Notification Service
-        notificationService = group "Notification Service" {
-          notificationAPI = container "Notification API" {
-            tags "NotificationService" "Service API"
-          } 
-        }  
 
         // --- Email Composition Service
         mailCompositionService = group "Email Composition Service" {
@@ -50,6 +63,14 @@ workspace {
           }
 
         }
+
+        // --- Email Composition Service
+        viewEmailService = group "View Email Service" {
+          viewEmailFrontend = container "Email View Frontend" {
+            tags "ViewEmailService" 
+          }
+        }
+
         // Store mail data and encrypted content
         mailCompositionAPI -> storage "Store mail metadata and content"
 
@@ -60,19 +81,22 @@ workspace {
         // Log events
         notificationAPI -> logging "Log Email sent event"
 
-        // Use access to web application
-        u -> webapplication
+        // Sender creates new email 
+        sender -> webapplication "Create new mail"
         webapplication -> authAPI "Authenticate user"
         webapplication -> mailCompositionAPI "Create mails"
+        notification -> recipient "Send out notification"
+        backend -> logging "Create events"
+
+        // Recipient receives new mail
+        recipient -> webapplication "View self-destructing mail"
+        webapplication -> viewEmailFrontend "View email"
+        viewEmailFrontend -> mailDB 
+        viewEmailFrontend -> storage
+
+
       }        
     }
-
-    s = softwareSystem "Software System" {
-      webapp = container "Web Application" "" "Spring?"
-      database = container "Database" "" "RDBS"
-    }
-
-    // Relationships between people and software systems
 
     // Deployments
     live = deploymentEnvironment "Live" {
@@ -226,17 +250,17 @@ workspace {
   }
 
   views {
-    // System context
-    systemContext s "SystemContext" {
+    // System Landscape
+    systemlandscape "SystemLandscape" {
       include *
-      description "The system context diagram for the self-destructing mail service"
+      # autoLayout
     }
 
     // -- Containers -----------------------------------------------------------
     // Backend
     container backend "Containers_All" {
       include *
-      autolayout
+      # autolayout
     }
     // --- Authentication Service 
     container backend "Containers_AuthenticationService" {
@@ -286,11 +310,24 @@ workspace {
         fontSize 22
         shape Person
       }
+      element "Sender" {
+        color #ffffff
+        background #8FB5FE
+        shape Person
+      }
+      element "Recipient" {
+        color #ffffff
+        background #E97451
+        shape Person
+      }
       element "Service API" {
         shape hexagon
       }
       element "Database" {
         shape cylinder
+      }
+      element "BackendSystem" {
+        background #D3D3D3
       }
     }
 
