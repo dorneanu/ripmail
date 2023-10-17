@@ -20,6 +20,7 @@ workspace {
       } 
       storage = softwaresystem "Storage System" "Stores encrypted mail content" {
         tags "Database"
+        storageBackend = container "Storage Backend"
       }
 
       notification = softwaresystem "Notification System" "Sends notification to recipient to view email" {
@@ -117,10 +118,14 @@ workspace {
             deploymentNode "acc-devops-prod" {
               tags "Amazon Web Services - AWS Organizations Account"
 
-              infrastructureNode "Gitlab Server" {
-                tags "Amazon Web Services - EC2"
-              }
+              vpc_management = deploymentNode "VPC (management)" {
+                tags "Amazon Web Services - VPC Virtual private cloud VPC"
 
+                gitlab_server = infrastructureNode "Gitlab Server" {
+                  tags "Amazon Web Services - EC2"
+                }
+
+              }
             }
           }
           
@@ -140,6 +145,12 @@ workspace {
                 eks_control_plane = infrastructureNode "EKS Control Plane" {
                   tags = "Amazon Web Services - EKS Cloud"
                 }
+              }
+
+              // ECR
+              ecr = infrastructureNode "ECR" {
+                tags "Amazon Web Services - Elastic Container Registry"
+                description "Private ECR registry"
               }
 
               // EKS cluster
@@ -186,6 +197,8 @@ workspace {
 
                   }
                 }
+
+
               }
 
               
@@ -208,6 +221,12 @@ workspace {
                   }
                 }
               }
+
+              // S3 (Storage System)
+              s3_storage = infrastructureNode "S3 Bucket (storage)" {
+                tags "Amazon Web Services - Simple Storage Service"
+              }
+
             }
           }
 
@@ -217,6 +236,15 @@ workspace {
 
           eks_control_plane -> eks_node_group1 "Controls"
           eks_control_plane -> eks_node_group2 "Controls"
+
+
+          // -- Deployments
+          gitlab_server -> ecr "Push Docker images"
+          eks_control_plane -> ecr "Pulls images"
+
+
+          // Store encrypted content
+          pod2_mailCompositionAPI -> s3_storage "Store encrypted mail"
 
           // -------------------------------------------------------------------
           // Organizational Unit: Security
