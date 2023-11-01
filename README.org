@@ -8,6 +8,8 @@ tbd
 
 ** Pen & Paper
 
+👉 https://blog.dornea.nu/2023/07/18/documentation-as-code-for-cloud/
+
 [[./docs/images/cloud-architecture-paper.jpg]]
 
 ** PlantUML
@@ -15,3 +17,7 @@ tbd
 👉 https://blog.dornea.nu/2023/07/30/documentation-as-code-for-cloud-plantuml/
 
 The ~puml~ files are located at [[./docs/plantuml]].
+
+** C4 Model & Structurizr DSL
+
+Coming soon 🎉
