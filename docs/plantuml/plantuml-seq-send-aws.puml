@@ -1,0 +1,43 @@
+  @startuml
+  ' Epilogue
+  skinparam BoxPadding 10
+
+  ' !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+  !define AWSPuml /home/victor/work/repos/aws-icons-for-plantuml/dist
+  !include AWSPuml/AWSCommon.puml
+  !include AWSPuml/Compute/all.puml
+  !include AWSPuml/ApplicationIntegration/APIGateway.puml
+  !include AWSPuml/General/Internetalt1.puml
+  !include AWSPuml/Database/DynamoDB.puml
+
+  ' Components
+  actor User as User
+  APIGatewayParticipant(api_gateway, "API Gateway", "")
+
+  box "EKS" #LightBlue
+    participant AuthenticationService
+    participant EncryptionService
+    participant EmailCompositionService
+    participant NotificationService
+    participant LifetimeManagementService
+  end box
+
+  ' Relationships
+  User -> api_gateway: POST /create-mail
+  == Authentication ==
+  api_gateway -> AuthenticationService: Authenticate user
+  AuthenticationService -> api_gateway: User authenticated
+
+  == Mail creation ==
+  api_gateway -> EmailCompositionService: POST /create-mail
+  EncryptionService --> EmailCompositionService: Email content encrypted
+  EmailCompositionService -> LifetimeManagementService: Set expiration time
+  note right: Expire after N hours
+  LifetimeManagementService --> EmailCompositionService: Expiration time set
+
+  == Notification ==
+  EmailCompositionService -> NotificationService: Notify recipient
+  NotificationService --> EmailCompositionService: Recipient notified
+  EmailCompositionService --> api_gateway: Email composition complete
+  api_gateway --> User: Email sent
+  @enduml

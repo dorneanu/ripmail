@@ -1,0 +1,25 @@
+  @startuml
+  title Sending a Self-Destructing Email
+
+  actor User
+  participant Frontend
+  participant AuthenticationService
+  participant EmailCompositionService
+  participant EncryptionService
+  participant LifetimeManagementService
+  participant NotificationService
+
+  User -> Frontend: Compose email
+  Frontend -> AuthenticationService: Authenticate user
+  AuthenticationService --> Frontend: User authenticated
+  Frontend -> EmailCompositionService: Compose email with content
+  EmailCompositionService -> EncryptionService: Encrypt email content
+  EncryptionService --> EmailCompositionService: Email content encrypted
+  EmailCompositionService -> LifetimeManagementService: Set expiration time
+  note right: Expire after N hours
+  LifetimeManagementService --> EmailCompositionService: Expiration time set
+  EmailCompositionService -> NotificationService: Notify recipient
+  NotificationService --> EmailCompositionService: Recipient notified
+  EmailCompositionService --> Frontend: Email composition complete
+  Frontend --> User: Email sent
+  @enduml

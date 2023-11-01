@@ -1,0 +1,22 @@
+  @startuml
+  actor User
+  participant Frontend
+  participant AuthMicroservice
+  participant EncryptionMicroservice
+  participant CompositionMicroservice
+  participant LifetimeManagementMicroservice
+  participant LoggingService
+  participant DataStorage
+
+  User -> Frontend: Compose Email
+  Frontend -> AuthMicroservice: Authenticate User
+  AuthMicroservice -> Frontend: User Authenticated
+  Frontend -> CompositionMicroservice: Send Email Data
+  CompositionMicroservice -> EncryptionMicroservice: Encrypt Email Content
+  EncryptionMicroservice -> LifetimeManagementMicroservice: Set Expiration Time
+  LifetimeManagementMicroservice -> Frontend: Expiration Time Set
+  Frontend -> Frontend: Notify User (Email Sent)
+  Frontend -> LoggingService: Log Email Sent Event
+  Frontend -> DataStorage: Store Email Metadata
+  CompositionMicroservice -> DataStorage: Store Encrypted Email Content
+  @enduml

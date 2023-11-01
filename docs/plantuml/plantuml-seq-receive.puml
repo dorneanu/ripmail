@@ -1,0 +1,14 @@
+  @startuml
+  actor Recipient
+  participant NotificationMicroservice
+  participant Frontend
+  participant EncryptionMicroservice
+  participant LifetimeManagementMicroservice
+
+  Recipient -> NotificationMicroservice: Received Email Notification
+  NotificationMicroservice -> Frontend: Get Email Data
+  Frontend -> EncryptionMicroservice: Decrypt Email Content
+  Frontend -> Frontend: Display Email
+  Frontend -> LifetimeManagementMicroservice: Check Expiration Status
+  LifetimeManagementMicroservice -> Frontend: Email Expired
+  @enduml

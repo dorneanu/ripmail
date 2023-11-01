@@ -1,0 +1,33 @@
+' !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!define AWSPuml /home/victor/work/repos/aws-icons-for-plantuml/dist    
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/ApplicationIntegration/SimpleNotificationService.puml
+!include AWSPuml/ManagementGovernance/CloudWatch.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/Compute/EC2Instance.puml
+!include AWSPuml/Compute/LambdaLambdaFunction.puml
+!include AWSPuml/Groups/all.puml
+!include AWSPuml/Containers/EKSCloud.puml
+!include AWSPuml/Containers/ElasticKubernetesService.puml
+!include AWSPuml/Containers/Containers.puml
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCEndpoints.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+!include AWSPuml/SecurityIdentityCompliance/IAMIdentityCenter.puml
+
+hide stereotype
+skinparam linetype ortho
+  GenericGroup(generic_group, "Generic Group") {
+    package "Some Group" {
+      HTTP - [First Component]
+      [Another Component]
+    }
+
+    node "Other Groups" {
+      FTP - [Second Component]
+      [First Component] --> FTP
+    }
+  }

@@ -1,0 +1,72 @@
+' !define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!define AWSPuml /home/victor/work/repos/aws-icons-for-plantuml/dist    
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/ApplicationIntegration/SimpleNotificationService.puml
+!include AWSPuml/ManagementGovernance/CloudWatch.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/Compute/EC2Instance.puml
+!include AWSPuml/Compute/LambdaLambdaFunction.puml
+!include AWSPuml/Groups/all.puml
+!include AWSPuml/Containers/EKSCloud.puml
+!include AWSPuml/Containers/ElasticKubernetesService.puml
+!include AWSPuml/Containers/Containers.puml
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCEndpoints.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+!include AWSPuml/SecurityIdentityCompliance/IAMIdentityCenter.puml
+
+hide stereotype
+skinparam linetype ortho
+AWSCloudGroup(cloud) {
+  GenericGroup(ou_tech, "OU-Tech") {
+    AWSAccountGroup(acc_tech_prod, "prod") {
+      VPCGroup(vpc_tech, "Custom VPC") {
+        EKSCloud(tech_eks_cluster, "Tech EKS Cluster", "Cluster") {
+        }
+        VPCEndpoints(tech_vpc_endpoint, "VPC Endpoint", "VPC Endpoint")
+      }
+      APIGateway(tech_api_gw, "API GW", "API GW")
+    }
+
+    ' Relationships
+    tech_api_gw --> tech_vpc_endpoint
+  }
+
+  GenericGroup(ou_security, "OU-Security") {
+    AWSAccountGroup(acc_security_prod, "prod") {
+      CloudWatch(sec_cloudwatch, "Cloudwatch", "Cloudwatch")
+      SimpleStorageService(sec_s3, "S3 Bucket", "S3 Bucket")
+      IAMIdentityCenter(sec_iam_center, "IAM", "IAM")
+
+      GenericAltGroup(sec_alerting_group, "Alerting") {
+        SimpleNotificationService(sec_sns, "SNS", "SNS")
+        LambdaLambdaFunction(sec_lambda, "Lambda", "Lambda")
+      }
+
+    }
+    ' Relationships
+    tech_api_gw --> sec_iam_center
+    sec_cloudwatch --> sec_alerting_group
+    tech_eks_cluster -- sec_s3
+  }
+
+  GenericGroup(ou_devops, "OU-DevOps") {
+    AWSAccountGroup(acc_devops_prod, "prod") {
+      GenericAltGroup(devops_cicd_group, "CI/CD") {
+      }
+
+      GenericAltGroup(devops_infraprov_group, "Infrastructure provisioning") {
+      }
+
+      GenericAltGroup(devops_releasemgmt_group, "Release Management") {
+      }
+
+      ' Relationships
+      devops_infraprov_group -right- acc_tech_prod
+      devops_cicd_group -right- tech_eks_cluster
+    }
+  }
+}
