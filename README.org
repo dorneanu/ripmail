@@ -3,3 +3,15 @@
 * ripmail 💣
 
 tbd
+
+* Documentation
+
+** Pen & Paper
+
+[[./docs/images/cloud-architecture-paper.jpg]]
+
+** PlantUML
+
+👉 https://blog.dornea.nu/2023/07/30/documentation-as-code-for-cloud-plantuml/
+
+The ~puml~ files are located at [[./docs/plantuml]].
